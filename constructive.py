@@ -34,7 +34,7 @@ def regenerate_from_structured_data(structured_file: str) -> str:
     Structured Podcast Data:
     {structured_summary}
 
-    The podcast should be detailed enough to give someone who hasn't listened to the podcast a complete understanding of the content, but concise enough to be readable.
+    The podcast should be detailed enough to give someone who hasn't listened to the podcast a complete understanding of the content so all content of the given structured_schema is present and concise enough to be readable.
     Format your response as a clear, well-structured podcast with appropriate sections if needed and ensure the narrative flows smoothly without gaps or abrupt transitions.
     The generated podcast transcript should be in such form:
     Speaker1 Name
@@ -200,8 +200,8 @@ def main():
     print("=" * 80)
     
     # File paths
-    structured_file = "Examples/final_result.json"
-    transcript_file = "Examples/transcription.txt"
+    structured_file = "final_result.json"
+    transcript_file = "transcription.txt"
     
     # Step 1: Generate summary from structured data
     print("\n[STEP 1] Regenerating podcast content from structured data...")

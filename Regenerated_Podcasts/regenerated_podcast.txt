@@ -1,68 +1,68 @@
 **Matt Turk**  
-Welcome to the MAD Podcast, where we explore the ever-evolving world of AI and technology. Today, I have the pleasure of welcoming Sholto Douglas, who will guide us through the fascinating landscape of AI advancements and the compute super cycle.  
+Welcome to the MAD Podcast, where we dive deep into the world of AI and technology. Today, I'm joined by Sholto Douglas as we explore the fascinating topic of the compute super cycle and exponential growth in AI.
 
 **Sholto Douglas**  
-Thank you, Matt. It's great to be here. Let's dive into the concept of the compute super cycle. People have speculated about hitting a plateau in AI growth, yet we continue to witness exponential advancements. Anything we can measure seems to be improving rapidly, particularly in AI models, although they still operate within a primitive pipeline that has much room for improvement.  
+Thank you, Matt. It's great to be here. You know, people have been saying we've hit a plateau in AI every month for the last three years, but in reality, AI models are still produced through a primitive pipeline with much room for improvement. Anything we can measure seems to be improving rapidly, which ties into the concept of exponential growth.
 
 **Matt Turk**  
-That's a crucial point, Sholto. The exponential growth ties into the release of Sonnet 4.5, which has become the best coding model worldwide. This aligns with the evolution of Frontier AI and the creation of Big AI Labs.  
+That's right, Sholto. And this episode also touches on the release and impact of Sonnet 4.5, which has become the best coding model in the world. We'll discuss the significance of Frontier AI and the operation of big AI labs, making AI concepts more approachable for everyone.
 
 **Sholto Douglas**  
-Absolutely, Matt. Sonnet 4.5 is part of Anthropic's rapid release pace. It followed Sonnet 3.7, released earlier this year. This pace is a proxy for accelerating progress, facilitated by our understanding of the two paradigm regime, which offers opportunities to update models continuously.  
+Absolutely, Matt. The release of Sonnet 4.5 is part of a rapid pace of releases at Anthropic, which is a proxy for accelerating progress. It's a shift from the two-paradigm regime that opens up opportunities to update models, especially considering we're two years post-ChatGPT, a time marked by increased investment in the compute super cycle.
 
 **Matt Turk**  
-The post-ChatGPT investment cycle also plays a role here, marking the beginning of the compute super cycle. Anthropic's approach seems to be distinct from other AI labs, focusing on practical, scalable solutions.  
+And it's not just about Sonnet. We also compare the differences between AI models like Opus, Sonnet, and Haiku. It's fascinating how Sonnet has surpassed Opus in intelligence, and we're seeing progress on smaller models before scaling up. This is where reinforcement learning comes into play, extending the capabilities of mid-tier models.
 
 **Sholto Douglas**  
-Indeed, our focus is on creating AI that is safe, controllable, and improves people's lives. This is different from labs like DeepMind, which focus more on scientific discoveries through projects like Alpha Fold. At Anthropic, coding and computer use are our primary focus areas, which we believe hold the most immediate impact.  
+Speaking of reinforcement learning, it's an area I've been passionate about, which led me to Anthropic. My journey began in Australia, with influences from my mother's work in South Africa and my experiences in China. Fencing also played a significant role, mentored by a coach who moved from Italy to Australia. These experiences shaped my path in technology.
 
 **Matt Turk**  
-That's a fascinating distinction. Sholto, could you tell us a bit about your journey to Anthropic?  
+It's interesting how personal experiences influence career decisions. For many, platforms like YouTube have become educational tools, offering insights into reinforcement learning and AI as perfect tutors. This aligns with the scaling hypothesis and the potential progress of AGI over the next decade.
 
 **Sholto Douglas**  
-Sure, I grew up in Australia, with my mother playing a significant mentoring role, which included her work in South Africa. I had enriching experiences in China and pursued fencing, which was a big part of my life. My academic journey included computer science and robotics, influenced by figures like Elon Musk, and eventually led to my involvement with Anthropic.  
+Indeed, the journey through computer science and robotics, inspired by figures like Elon Musk, led me to work on robotic manipulation and general foundation models. Despite some setbacks, like PhD program rejections, opportunities at Google and Anthropic arose, showcasing the importance of independent research and problem taste.
 
 **Matt Turk**  
-Your diverse experiences surely contribute to your work at Anthropic. Looking at the broader landscape, how do you see AI's role in learning and development?  
+That's a crucial point, Sholto. Being academically great and excelling in research at Anthropic require different qualities. Independent work, like optimizing a CUDA matmul on a GPU, is highly valued and can demonstrate capability beyond traditional academic signals.
 
 **Sholto Douglas**  
-Platforms like YouTube, combined with AI, have transformed learning. AI serves as a perfect tutor, enhancing our understanding of complex topics. This impact will only grow as we progress towards AGI, which I believe will be one of the most meaningful developments in the coming decade.  
+Growing talent in AI research is vital. At Anthropic, we cultivate junior researchers and engineers. My transition from Google to Anthropic was motivated by a focus on creating a better future, where AI helps improve lives while being safe and controllable. Different AI labs, like DeepMind, focus on scientific discoveries, but Anthropic emphasizes coding and computer use.
 
 **Matt Turk**  
-With such rapid advancements, how does independent research and problem taste play into AI development?  
+That's a good segue into the concept of taste in AI research. It's a crucial ingredient for deciding on research directions and involves making inferences about returns to scale. The bitter lesson teaches us that scale and planning often outweigh clever methods, which is something we see in AI research today.
 
 **Sholto Douglas**  
-Independent research is crucial. It allows for high-signal contributions that traditional academic paths might overlook. This is especially true for underrepresented regions like Australia, where mentorship can be lacking. At Anthropic, we value the ability to demonstrate capability through independent work.  
+Exactly, Matt. Testing systems at multiple levels of scale is akin to biology, where understanding underlying mechanisms is key. In AI, the success rate of ideas is low, but a culture of safe experimentation at places like Anthropic and DeepMind allows for the development of general techniques. This is where different AI paradigms, like those explored by DeepMind, come into play.
 
 **Matt Turk**  
-Speaking of capability, how is Anthropic nurturing talent within AI research?  
+Anthropic's focus on scaling compute with current techniques contrasts with DeepMind's exploration of novel architectures. Coding is a tractable problem domain with significant economic impact, and Sonnet 4.5 is a testament to the progress in coding models. The SWE bench benchmark highlights recent progress and improvements in coding productivity.
 
 **Sholto Douglas**  
-We focus on growing junior people into skilled researchers and engineers. This involves designing new infrastructures, like inference stacks and RL code bases, derived from first principles. Our work extends into creating models that enhance productivity through coding.  
+The evolution of coding models, like Sonnet 3.5, has transformed the landscape over the past year. Cognition and Windsurf are making ambitious bets on agentic abilities, betting on future model capabilities. This is indicative of the exponential growth in model capabilities, where models pursue longer independent goals.
 
 **Matt Turk**  
-It's impressive how coding has become a focal point for Anthropic. Can you elaborate on the economic impact of these advancements?  
+The 30-hour coding agent exemplifies this progress, operating like a human in a loop with planning and memory capabilities. However, concerns about language models and their self-correcting ability remain, as we strive for long-term coherency and self-correction in AI agents.
 
 **Sholto Douglas**  
-Certainly. Coding offers a tractable problem domain with significant economic impact. The demand for software is massive, outweighing the current supply. By focusing on coding, we aim to accelerate AI research and meet this demand effectively.  
+Indeed, AI's long-term coherency is crucial for task completion over extended time horizons. Meter evals measure AI performance, but there are limitations. Nevertheless, the prospect of tasks achievable with extended AI operation, like Slack-like software development, is exciting.
 
 **Matt Turk**  
-Let's discuss the performance of AI models like Sonnet 4.5 across various domains.  
+As we look to the future, breakthroughs in AI agent capabilities, like Sonnet 4.1's runtime, and advancements in memory and decision-making highlight the importance of teaching coding taste to AI models. The jump in performance is not due to a single breakthrough but continuous application across the stack.
 
 **Sholto Douglas**  
-Sonnet 4.5 excels in GDP evaluations, performing well across sectors like economics, research, and finance. This indicates its strong general capability, although current measures may not fully capture the economic impact due to contextual limitations.  
+Reinforcement learning plays a significant role, allowing models to assess their own confidence and solve complex problems. The path to AGI involves combining computer RL with a minimum base model quality and long-term coherency, ultimately aiming to surpass human capabilities.
 
 **Matt Turk**  
-Looking to the future, what are the prospects for AI models?  
+In the debate on AI approaches, the potential for AGI remains significant. While some believe in a plateau, AI models have much room for improvement, as demonstrated by Sonnet 4.5's performance across various domains. This is where policymakers should invest in measuring AI progress.
 
 **Sholto Douglas**  
-The potential is immense. We're planning for a world where coding agents offer tremendous leverage, solving pressing global issues through digital and physical means. However, challenges remain, especially in robotics. Progress in this area, supported by language models, could lead to significant breakthroughs.  
+Preparing for a future with advanced AI involves planning for individual leverage through coding agents, addressing challenges in robotics, and utilizing language models in planning. The role of robotics labs and the critique of Moravec's paradox illustrate the complexity of this journey.
 
 **Matt Turk**  
-Thank you, Sholto, for a truly enlightening conversation.  
+As we conclude, I want to express my gratitude for this conversation, Sholto. It's been a pleasure having you on the podcast.
 
 **Sholto Douglas**  
-Thank you, Matt. It's been a pleasure discussing these pivotal topics.  
+Thank you, Matt. It's been a pleasure to participate.
 
 **Matt Turk**  
-To our listeners, thank you for tuning in. If you enjoyed today's episode, please support the podcast by sharing it and suggesting great guests for future episodes. Until next time, goodbye!
+And to our listeners, thank you for tuning in. We hope you support the podcast by sharing it and helping us bring in more great guests. Until next time, goodbye!
