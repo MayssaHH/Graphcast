@@ -1,0 +1,2942 @@
+{
+  "topic_1": {
+    "title": "Introduction and Overview of the Podcast",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Compute Super Cycle",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "People have said that we've hitting a plateau every month for the last three years.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "AI models are produced in a primitive pipeline with much room for improvement.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Anything that we can measure seems to be improving really rapidly.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Exponential Growth",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Introduction to the MAD Podcast",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_7",
+        "content": "Sonnet 4.5 became the best coding model in the world.",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_8",
+        "content": "Frontier AI and Big AI Labs",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_9",
+        "content": "Approachable AI Concepts",
+        "speaker": "Matt Turk"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "The compute super cycle is related to the exponential growth in AI.",
+        "source_node_id": "node_1",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of the current state and potential of AI models.",
+        "source_node_id": "node_3",
+        "target_node_id": "node_1"
+      },
+      {
+        "id": "conn_3",
+        "content": "Explanation of the rapid improvement in measurable aspects.",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_4",
+        "content": "Introduction to the podcast episode featuring Sholto Douglas.",
+        "source_node_id": "node_6",
+        "target_node_id": "node_9"
+      },
+      {
+        "id": "conn_5",
+        "content": "Discussion of Sonnet 4.5 and its significance.",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_6",
+        "content": "Discussion of Frontier AI and the operation of big AI labs.",
+        "source_node_id": "node_6",
+        "target_node_id": "node_8"
+      }
+    ]
+  },
+  "topic_2": {
+    "title": "Release and Impact of Sonnet 4.5",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Release of Sonnet 4.5",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Pace of releases at Anthropic",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_3",
+        "content": "Sonnet 3.7 was released in February of this year",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_4",
+        "content": "Proxy for progress accelerating",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_5",
+        "content": "Two paradigm regime",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Opportunities to update models",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "2 years after ChatGPT",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Post ChatGPT investment cycle",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Compute super cycle beginning",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Sonnet 4.5 release is part of the pace of releases",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Pace of releases is a proxy for progress accelerating",
+        "source_node_id": "node_2",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_3",
+        "content": "Two paradigm regime explains the proxy",
+        "source_node_id": "node_5",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Opportunities to update models due to two paradigm regime",
+        "source_node_id": "node_5",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_5",
+        "content": "2 years after ChatGPT relates to post ChatGPT investment cycle",
+        "source_node_id": "node_7",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_6",
+        "content": "Post ChatGPT investment cycle explains compute super cycle",
+        "source_node_id": "node_8",
+        "target_node_id": "node_9"
+      }
+    ]
+  },
+  "topic_3": {
+    "title": "Differences Between AI Models: Opus, Sonnet, and Haiku",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Opus Model",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "Sonnet Model",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Haiku Model",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Sonnet is smarter than Opus in the most recent release",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "It is cheaper to train mid tier models than large models",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Progress is often made on smaller models before scaling up",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Reinforcement learning can extend mid tier models",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Comparison between Opus and Sonnet models",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Comparison between Sonnet and Haiku models",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Explanation of why Sonnet is smarter than Opus",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_4",
+        "content": "Explanation of progress in model training",
+        "source_node_id": "node_5",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_5",
+        "content": "Explanation of reinforcement learning impact",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      }
+    ]
+  },
+  "topic_4": {
+    "title": "Sholto Douglas's Journey to Anthropic",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Matt Turk",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Sholto Douglas",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Australia",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Sholto Douglas's Mother",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "South Africa",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "China",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Dossier",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Fencing",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Fencing Coach",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "Italy",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "Coach's Wife",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Matt Turk asks Sholto Douglas about his journey",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Sholto Douglas grew up in Australia",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Sholto Douglas's mother was a mentor",
+        "source_node_id": "node_4",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_4",
+        "content": "Sholto Douglas's mother worked in South Africa",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Sholto Douglas did an exchange in China",
+        "source_node_id": "node_2",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "Sholto Douglas received a dossier",
+        "source_node_id": "node_2",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_7",
+        "content": "Sholto Douglas excelled in fencing",
+        "source_node_id": "node_2",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_8",
+        "content": "Fencing coach mentored Sholto Douglas",
+        "source_node_id": "node_9",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_9",
+        "content": "Fencing coach moved from Italy to Australia",
+        "source_node_id": "node_9",
+        "target_node_id": "node_10"
+      },
+      {
+        "id": "conn_10",
+        "content": "Coach's wife faced discrimination in Italy",
+        "source_node_id": "node_11",
+        "target_node_id": "node_10"
+      }
+    ]
+  },
+  "topic_5": {
+    "title": "The Role of YouTube and AI in Learning and Development",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Early introduction to reinforcement learning",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "You can watch people on YouTube, analyze what they are doing, and replicate that to become part of their world.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "The fundamental impact of YouTube is that every kid seems to be much better than the prior generation.",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_4",
+        "content": "AI as a perfect tutor",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Personal experience with AI and the decision to work in technology",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "GWERN essay on scaling and the scaling hypothesis",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "AGI progress over the next decade will be one of the most meaningful things to work on in the world.",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Explanation of how YouTube can be used for learning and development",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of the impact of YouTube on the younger generation",
+        "source_node_id": "node_3",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_3",
+        "content": "Comparison between the impact of YouTube and AI",
+        "source_node_id": "node_3",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Example of personal career decision influenced by AI",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Explanation of the significance of AGI progress",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      }
+    ]
+  },
+  "topic_6": {
+    "title": "Sholto's Academic and Professional Journey",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Matt Turk",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Sholto Douglas",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Computer science and robotics",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Elon Musk",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Essay on AGI",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Robotic manipulation",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "General foundation models for robotics",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Google",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "PhD programs",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Sholto's last year of undergrad",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_2",
+        "content": "Sholto's inspiration from Elon Musk",
+        "source_node_id": "node_4",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_3",
+        "content": "Essay on AGI as a turning point",
+        "source_node_id": "node_5",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_4",
+        "content": "Work on robotic manipulation",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_5",
+        "content": "Google's interest in Sholto's work",
+        "source_node_id": "node_8",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_6",
+        "content": "Rejection from PhD programs",
+        "source_node_id": "node_9",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_7",
+        "content": "Google's offer to Sholto",
+        "source_node_id": "node_8",
+        "target_node_id": "node_2"
+      }
+    ]
+  },
+  "topic_7": {
+    "title": "The Importance of Independent Research and Problem Taste",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Being great academically and being a great anthropic researcher require slightly different qualities.",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "The signals used to gate academia do not always align with the criteria of being really effective.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "In the US, undergrad research can lead to opportunities in Europe, unlike in Australia.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Lack of mentorship in Australia affects the development of problem taste.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Non-traditional signals like independent work are highly valued.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Simon Bohm's independent work on optimizing a cuda matmul on a GPU is a high signal.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "There is an absence of agency and taste, but there are ways to demonstrate capability through independent work.",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Different qualities are needed for academic and research success.",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "US undergrad research opportunities support the argument about academic signals.",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Lack of mentorship in Australia supports the argument about developing problem taste.",
+        "source_node_id": "node_2",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Independent work is a high signal for capability.",
+        "source_node_id": "node_5",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_5",
+        "content": "Independent work can demonstrate capability despite the absence of traditional signals.",
+        "source_node_id": "node_5",
+        "target_node_id": "node_7"
+      }
+    ]
+  },
+  "topic_8": {
+    "title": "Growing Talent in AI Research",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Matt Turk",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Sholto Douglas",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Anthropic",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Google",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "ChatGPT",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Gemini program",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Brain and DeepMind",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "inference stack",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "SG Langs",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "RL code base",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Matt Turk asks Sholto Douglas about the growth of AI talent.",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Anthropic grows junior people into researchers and engineers.",
+        "source_node_id": "node_3",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_3",
+        "content": "Google notices Sholto Douglas.",
+        "source_node_id": "node_4",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_4",
+        "content": "Sholto Douglas starts at Google before ChatGPT.",
+        "source_node_id": "node_2",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Google competes with the Gemini program.",
+        "source_node_id": "node_4",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "Gemini is formed from Brain and DeepMind.",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_7",
+        "content": "Sholto Douglas designs a new inference stack.",
+        "source_node_id": "node_2",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_8",
+        "content": "SG Langs derived from first principles.",
+        "source_node_id": "node_9",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_9",
+        "content": "Sholto Douglas leads research infrastructure for RL code base.",
+        "source_node_id": "node_2",
+        "target_node_id": "node_10"
+      }
+    ]
+  },
+  "topic_9": {
+    "title": "Transition to Anthropic and Company Culture",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Move to Anthropic",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "Motivations for moving to Anthropic",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Anthropic's focus on a better future",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "AI that helps people improve their lives",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "AI that is safe and controllable",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Understanding AI and forecasting progress",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Differences in AI research labs",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_8",
+        "content": "Smart people and similar resources in AI labs",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_9",
+        "content": "Differences in culture and goals",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "DeepMind's focus on scientific discoveries",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "DeepMind's scientific efforts like Alpha Fold",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_12",
+        "content": "Anthropic's focus areas",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_13",
+        "content": "Anthropic's focus on coding and computer use",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_14",
+        "content": "Anthropic's lack of focus on mathematical reasoning",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Explanation of motivations for moving to Anthropic",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of Anthropic's focus on a better future",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Example of AI that helps people improve their lives",
+        "source_node_id": "node_3",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Example of AI that is safe and controllable",
+        "source_node_id": "node_3",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Example of understanding AI and forecasting progress",
+        "source_node_id": "node_3",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "Comparison of differences in AI research labs",
+        "source_node_id": "node_7",
+        "target_node_id": "node_10"
+      },
+      {
+        "id": "conn_7",
+        "content": "Explanation of DeepMind's focus on scientific discoveries",
+        "source_node_id": "node_10",
+        "target_node_id": "node_11"
+      },
+      {
+        "id": "conn_8",
+        "content": "Comparison of Anthropic's focus areas",
+        "source_node_id": "node_10",
+        "target_node_id": "node_12"
+      },
+      {
+        "id": "conn_9",
+        "content": "Example of Anthropic's focus on coding and computer use",
+        "source_node_id": "node_12",
+        "target_node_id": "node_13"
+      },
+      {
+        "id": "conn_10",
+        "content": "Explanation of Anthropic's lack of focus on mathematical reasoning",
+        "source_node_id": "node_12",
+        "target_node_id": "node_14"
+      }
+    ]
+  },
+  "topic_10": {
+    "title": "The Concept of Taste in AI Research",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Taste in AI research",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Mechanistically understanding exactly what you're trying to do and having an important simplicity regularizer",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Taste is the crucial ingredient that allows you to decide what goes into your training run with imperfect information",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Past a certain level of scale, you have to guess the impact of changes",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Taste involves making good inferences about increasing returns to scale",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Taste helps decide if a research direction is worth pursuing",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Machine learning methods can fail for many reasons unlike building a bridge",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Taste relates to simplicity regularization and cleverness",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "The bitter lesson: clever methods are wiped out by scale and planning",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Explanation of what taste in AI research involves",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Taste helps decide what goes into training runs",
+        "source_node_id": "node_1",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Taste involves guessing the impact of changes at scale",
+        "source_node_id": "node_1",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Taste involves making inferences about returns to scale",
+        "source_node_id": "node_1",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Taste helps decide if research directions are worth pursuing",
+        "source_node_id": "node_1",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "Machine learning methods can fail for many reasons",
+        "source_node_id": "node_1",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_7",
+        "content": "Taste relates to simplicity regularization and cleverness",
+        "source_node_id": "node_1",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_8",
+        "content": "The bitter lesson of clever methods being wiped out by scale",
+        "source_node_id": "node_1",
+        "target_node_id": "node_9"
+      }
+    ]
+  },
+  "topic_11": {
+    "title": "The Bitter Lesson and the Role of Simplicity in AI",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "The Bitter Lesson",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Generalization and compute will win over time",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_3",
+        "content": "Methodist can take advantage of compute",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Search and learning will wash away all tweaks",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Convolutional neural networks encode a prior",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Nearby pixels form curves and abstractions",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Convolutional neural networks vs. vision transformers",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Language processing and grammar",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Limitations in generalizing across poetry",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "The Bitter Lesson is defined by generalization and compute winning over time",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Methodist can take advantage of compute relates to The Bitter Lesson",
+        "source_node_id": "node_3",
+        "target_node_id": "node_1"
+      },
+      {
+        "id": "conn_3",
+        "content": "Search and learning washing away tweaks explains Methodist taking advantage of compute",
+        "source_node_id": "node_4",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_4",
+        "content": "Convolutional neural networks encode a prior is an example of search and learning",
+        "source_node_id": "node_5",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_5",
+        "content": "Nearby pixels form curves and abstractions explains convolutional neural networks encoding a prior",
+        "source_node_id": "node_6",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_6",
+        "content": "Convolutional neural networks vs. vision transformers explains the limitations of convolutional neural networks",
+        "source_node_id": "node_7",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_7",
+        "content": "Language processing and grammar is an example of explicit structure in AI",
+        "source_node_id": "node_8",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_8",
+        "content": "Limitations in generalizing across poetry explains the challenge of explicit structure in AI",
+        "source_node_id": "node_9",
+        "target_node_id": "node_8"
+      }
+    ]
+  },
+  "topic_12": {
+    "title": "Art vs. Science in AI Research",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Art versus science in anticipating training runs",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Testing a system at multiple levels of scale",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Analog to biology in testing therapeutics",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Testing across multiple scales and organisms",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Understanding underlying mechanisms",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Machine Learning model scales",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Mechanistic understanding of learning dynamics",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Challenges with hacks and complexity",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Explanation of testing systems at multiple levels of scale",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Biological testing as an example",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Explanation of testing across scales and organisms",
+        "source_node_id": "node_3",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Understanding mechanisms in biology and ML",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Parallel between biology and ML model scales",
+        "source_node_id": "node_5",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "Explanation of mechanistic understanding in ML",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_7",
+        "content": "Challenges with hacks in ML",
+        "source_node_id": "node_7",
+        "target_node_id": "node_8"
+      }
+    ]
+  },
+  "topic_13": {
+    "title": "Success Rate of Ideas in AI Research",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Success rate of ideas in AI research",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Noam Shizia's success rate of ideas",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "10% of ideas work for Noam Shizia",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Culture of experimentation in AI companies",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_5",
+        "content": "Compute is expensive",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_6",
+        "content": "Tension between delivering results and free experimentation",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_7",
+        "content": "Culture of safe experimentation at Anthropic and DeepMind",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Cost of time and focus in experimentation",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Importance of developing general techniques",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "Tension between scalable and non-scalable actions",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Noam Shizia's success rate as an example of idea success rate",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of low success rate of ideas",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Connection between idea success rate and culture of experimentation",
+        "source_node_id": "node_1",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Explanation of expensive compute as a factor in experimentation",
+        "source_node_id": "node_5",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_5",
+        "content": "Connection between culture of experimentation and tension in AI companies",
+        "source_node_id": "node_4",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "Explanation of culture of safe experimentation",
+        "source_node_id": "node_7",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_7",
+        "content": "Explanation of cost of time and focus in experimentation",
+        "source_node_id": "node_8",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_8",
+        "content": "Explanation of importance of developing general techniques",
+        "source_node_id": "node_9",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_9",
+        "content": "Connection between tension in scalable and non-scalable actions",
+        "source_node_id": "node_10",
+        "target_node_id": "node_6"
+      }
+    ]
+  },
+  "topic_14": {
+    "title": "Exploration of Different AI Paradigms",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Anthropic's Research Approach",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "Anthropic focuses on scaling compute with current techniques.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "DeepMind's Research Approach",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "DeepMind explores a wide range of novel architectures.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Research ethos differences between Anthropic and DeepMind.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Gemini as a focused bet within DeepMind.",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Comparison of research approaches",
+        "source_node_id": "node_1",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of Anthropic's focus",
+        "source_node_id": "node_2",
+        "target_node_id": "node_1"
+      },
+      {
+        "id": "conn_3",
+        "content": "Explanation of DeepMind's broad approach",
+        "source_node_id": "node_4",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_4",
+        "content": "Explanation of research ethos differences",
+        "source_node_id": "node_5",
+        "target_node_id": "node_1"
+      },
+      {
+        "id": "conn_5",
+        "content": "Explanation of research ethos differences",
+        "source_node_id": "node_5",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_6",
+        "content": "Example of focused research within DeepMind",
+        "source_node_id": "node_6",
+        "target_node_id": "node_3"
+      }
+    ]
+  },
+  "topic_15": {
+    "title": "Focus on Coding and Economic Impact",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Anthropic is focused on coding for two main reasons.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "Coding allows for the fastest assistance in AI research.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Automating AI research is important for the speed of progress.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Coding is the nearest term tractable problem domain with economic impact.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "There is massive demand for software and keen early adopters.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "The demand for software exceeds the supply of good software.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Coding is a uniquely tractable problem for current techniques.",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "The focus on coding is supported by its ability to assist AI research.",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "The argument for coding assisting AI research is supported by the importance of automating AI research.",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "The focus on coding is supported by its economic impact.",
+        "source_node_id": "node_1",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "The economic impact argument is supported by the demand for software and early adopters.",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "The economic impact argument is further supported by the demand exceeding supply.",
+        "source_node_id": "node_4",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "The focus on coding is supported by its tractability for current techniques.",
+        "source_node_id": "node_1",
+        "target_node_id": "node_7"
+      }
+    ]
+  },
+  "topic_16": {
+    "title": "Sonnet 4.5 as the Best Coding Agent",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Self-driving cars",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "Coding models",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Tractability and replayability in coding",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "AI in legal cases",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Productivity with AI tools",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Sonnet 4.5",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_7",
+        "content": "SWE bench benchmark",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "SWE bench measures coding progress",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Recent progress in SWE bench scores",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "Historical SWE bench scores",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "Imperfect nature of SWE bench",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_12",
+        "content": "Cognition folks in Devon using the model",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Comparison between self-driving cars and coding models",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of tractability and replayability in coding",
+        "source_node_id": "node_3",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_3",
+        "content": "Contrast between AI in legal cases and coding",
+        "source_node_id": "node_4",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_4",
+        "content": "Explanation of increased productivity with AI tools",
+        "source_node_id": "node_5",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_5",
+        "content": "Sonnet 4.5's performance on SWE bench",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_6",
+        "content": "Definition of SWE bench",
+        "source_node_id": "node_7",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_7",
+        "content": "Explanation of recent progress in SWE bench scores",
+        "source_node_id": "node_9",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_8",
+        "content": "Explanation of historical SWE bench scores",
+        "source_node_id": "node_10",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_9",
+        "content": "Explanation of the imperfect nature of SWE bench",
+        "source_node_id": "node_11",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_10",
+        "content": "Example of the model's utility",
+        "source_node_id": "node_12",
+        "target_node_id": "node_6"
+      }
+    ]
+  },
+  "topic_17": {
+    "title": "The Evolution of Coding Models and Agentic Abilities",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Measure of a good model",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "Coding has been transformed over the last year",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "3.5 Sonnet",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "3.5 Sonnet caused PMF for Cursor",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Cognition and Windsurf",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Spectrum of agency in models",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Windsurf's aggressive bet on agentic abilities",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Lesson for startups",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_9",
+        "content": "Bet on future model capabilities",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_10",
+        "content": "Exponential growth in model capabilities",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "Longer independent goal pursuit by models",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_12",
+        "content": "Example of model building a chat app",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_13",
+        "content": "Current products lack such capabilities",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_14",
+        "content": "Cognition's bet on longer running agents",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Explanation of what makes a model good",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Introduction of 3.5 Sonnet as a transformative model",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Explanation of 3.5 Sonnet's impact",
+        "source_node_id": "node_3",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Cognition and Windsurf's ambitious targets",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Explanation of the spectrum of agency",
+        "source_node_id": "node_5",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "Explanation of Windsurf's strategy",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_7",
+        "content": "Lesson for startups",
+        "source_node_id": "node_7",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_8",
+        "content": "Explanation of betting on future capabilities",
+        "source_node_id": "node_8",
+        "target_node_id": "node_9"
+      },
+      {
+        "id": "conn_9",
+        "content": "Explanation of exponential growth",
+        "source_node_id": "node_9",
+        "target_node_id": "node_10"
+      },
+      {
+        "id": "conn_10",
+        "content": "Explanation of longer independent goal pursuit",
+        "source_node_id": "node_10",
+        "target_node_id": "node_11"
+      },
+      {
+        "id": "conn_11",
+        "content": "Example of model's capabilities",
+        "source_node_id": "node_11",
+        "target_node_id": "node_12"
+      },
+      {
+        "id": "conn_12",
+        "content": "Explanation of current product capabilities",
+        "source_node_id": "node_12",
+        "target_node_id": "node_13"
+      },
+      {
+        "id": "conn_13",
+        "content": "Explanation of Cognition's strategy",
+        "source_node_id": "node_13",
+        "target_node_id": "node_14"
+      }
+    ]
+  },
+  "topic_18": {
+    "title": "The 30-Hour Coding Agent and Its Capabilities",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "30-hour aspect of the coding agent",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Agent's activities",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Agent operates like a human in a loop",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Tool use",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Agent's planning and memory capabilities",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Markdown file of to-dos",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Self-verification loop",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Concern about language models",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Current generation's self-correcting ability",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Agent's activities related to 30-hour aspect",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of agent's operation",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Definition of tool use",
+        "source_node_id": "node_4",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_4",
+        "content": "Agent's planning and memory capabilities",
+        "source_node_id": "node_3",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Example of agent's memory use",
+        "source_node_id": "node_5",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "Explanation of self-verification loop",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_7",
+        "content": "Concern about language models and self-correction",
+        "source_node_id": "node_8",
+        "target_node_id": "node_9"
+      }
+    ]
+  },
+  "topic_19": {
+    "title": "Long-Term Coherency and Self-Correction in AI Agents",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Two axes of AI: raw intelligence and operational duration",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Fundamental breakthrough in AI",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_3",
+        "content": "Long-term coherency in AI models",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Importance of long-term coherency",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Meter evals as a measure of AI performance",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Meter evals",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Relationship between AI progress and task completion time horizon",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Doubling of AI task completion time horizon",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Limitations of the meter evals",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Relationship between two axes and fundamental breakthrough",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of long-term coherency",
+        "source_node_id": "node_3",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_3",
+        "content": "Meter evals as an example of measuring AI performance",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_4",
+        "content": "Definition of meter evals",
+        "source_node_id": "node_5",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_5",
+        "content": "Relationship between AI progress and task completion",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_6",
+        "content": "Explanation of AI task completion time horizon doubling",
+        "source_node_id": "node_7",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_7",
+        "content": "Explanation of limitations of meter evals",
+        "source_node_id": "node_8",
+        "target_node_id": "node_9"
+      }
+    ]
+  },
+  "topic_20": {
+    "title": "Examples of Tasks Achievable with Extended AI Operation",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Slack-like software development",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "End-to-end working software takes time, not just an MVP demo.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Machine learning experiments",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Proposing experiments, writing code, running tests, and iterating opens up possibilities.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Models cannot yet create full working software.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Cloud AI demo progression",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_7",
+        "content": "Progression from wireframes to fully functional websites autonomously built.",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_8",
+        "content": "Complex features like artifacts in models.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Artifacts as a feature where the model writes code and displays results.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "Model replicating Claude AI with artifacts.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "Progress expected over the next year.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_12",
+        "content": "Comparison of current progress to a year ago.",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Slack-like software as an example of tasks achievable with extended AI operation",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Machine learning experiments as another example",
+        "source_node_id": "node_3",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_3",
+        "content": "Explanation of current limitations of models",
+        "source_node_id": "node_5",
+        "target_node_id": "node_1"
+      },
+      {
+        "id": "conn_4",
+        "content": "Cloud AI demo as an example of model progression",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_5",
+        "content": "Definition of artifacts in models",
+        "source_node_id": "node_8",
+        "target_node_id": "node_9"
+      },
+      {
+        "id": "conn_6",
+        "content": "Example of model replicating Claude AI",
+        "source_node_id": "node_10",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_7",
+        "content": "Explanation of expected progress over the next year",
+        "source_node_id": "node_11",
+        "target_node_id": "node_12"
+      }
+    ]
+  },
+  "topic_21": {
+    "title": "Breakthroughs in AI Agent Capabilities",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Sunnet 4.1 runtime capability",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Current model runtime capability is up to 30 hours",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_3",
+        "content": "Memory evolution and context in AI models",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_4",
+        "content": "Intervention model in AI similar to Tesla",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "AI models taking shortcuts and losing context",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Improvements in AI model decision-making",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Importance of memory in AI models",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Managing memory and learning from experiences",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Teaching coding taste to AI models",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "Coding taste in software engineering",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "Good abstractions in coding",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_12",
+        "content": "Strategies for teaching coding taste",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Comparison of Sunnet 4.1 and current model runtime",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of intervention model in AI",
+        "source_node_id": "node_4",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Explanation of AI models taking shortcuts",
+        "source_node_id": "node_5",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_4",
+        "content": "Connection between improvements in decision-making and context",
+        "source_node_id": "node_6",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_5",
+        "content": "Explanation of memory management and learning",
+        "source_node_id": "node_8",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_6",
+        "content": "Definition of coding taste",
+        "source_node_id": "node_10",
+        "target_node_id": "node_9"
+      },
+      {
+        "id": "conn_7",
+        "content": "Example of good abstractions",
+        "source_node_id": "node_11",
+        "target_node_id": "node_10"
+      },
+      {
+        "id": "conn_8",
+        "content": "Connection between strategies for teaching coding taste and coding taste concept",
+        "source_node_id": "node_12",
+        "target_node_id": "node_9"
+      }
+    ]
+  },
+  "topic_22": {
+    "title": "Progress in AI Models and Reinforcement Learning",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Jump in performance of AI models",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Progress is not due to one individual breakthrough but continuous application across the stack",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Progress is a function of compute",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Progress can be plotted with a straight line similar to Moore's law",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Evolution from pre-training to reinforcement learning (RL)",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_6",
+        "content": "Pre-training vs. Reinforcement Learning (RL)",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Skill to say 'I don't know' learned via RL",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "RL allows models to assess their own confidence",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "RL on language models started to work at the end of last year",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "OpenAI released the first serious RL+LLMs release with O1",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "New axis of scaling with RL and test time compute",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Explanation of progress not being due to individual breakthroughs",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of progress as a function of compute",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Explanation of progress plotted with a straight line",
+        "source_node_id": "node_3",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Connection between pre-training and RL",
+        "source_node_id": "node_1",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Definition of pre-training vs. RL",
+        "source_node_id": "node_5",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "Example of skill learned via RL",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_7",
+        "content": "Explanation of RL allowing models to assess confidence",
+        "source_node_id": "node_7",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_8",
+        "content": "Explanation of RL on language models starting to work",
+        "source_node_id": "node_8",
+        "target_node_id": "node_9"
+      },
+      {
+        "id": "conn_9",
+        "content": "Explanation of OpenAI's contribution to RL+LLMs",
+        "source_node_id": "node_9",
+        "target_node_id": "node_10"
+      },
+      {
+        "id": "conn_10",
+        "content": "Explanation of new axis of scaling with RL",
+        "source_node_id": "node_10",
+        "target_node_id": "node_11"
+      }
+    ]
+  },
+  "topic_23": {
+    "title": "Test Time Compute and Reinforcement Learning",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Test Time Compute",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "Reinforcement Learning (RL)",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Test time compute is a way of answering questions that are hard for you to answer.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "If I ask you a basic times table right now, you can say that off like this. But if you're a kid, you have to do out the math.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Test Time Compute lets you do harder problems than you can currently do off the cuff.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "RL allows you to distill that back into the model.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "AlphaGo",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_8",
+        "content": "Reinforcement learning is not a new concept.",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_9",
+        "content": "Richard Sutton, who's been doing work in the field for decades",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_10",
+        "content": "In the Deep SEQ paper they detail one, an approach that works and two, a lot of approaches that don't work.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "Some of the approaches that didn't work were the approaches that led to AlphaGo's success.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_12",
+        "content": "RL from Verified Rewards regime is almost the simplest possible thing.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_13",
+        "content": "People thought this was too simple to work and tried more complex methods.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_14",
+        "content": "A minimum bar in LLM quality is required.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_15",
+        "content": "You need the model to solve meaningfully difficult coding and math problems before getting feedback.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_16",
+        "content": "Two years ago 8000 tokens was considered long context for a language model.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_17",
+        "content": "Models are now using 8,000 or 30,000 tokens to reason.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_18",
+        "content": "Ability to reason in long chains of tokens can emerge naturally with the right feedback signal.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_19",
+        "content": "Allow the model to search, have enough compute to run the experiments.",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Overlap between Test Time Compute and Reinforcement Learning",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Explanation of Test Time Compute",
+        "source_node_id": "node_1",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Example of reasoning process",
+        "source_node_id": "node_3",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Explanation of Test Time Compute's capability",
+        "source_node_id": "node_1",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Explanation of RL's role",
+        "source_node_id": "node_2",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_6",
+        "content": "Historical context of RL with AlphaGo",
+        "source_node_id": "node_2",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_7",
+        "content": "Example of RL's long-standing presence",
+        "source_node_id": "node_8",
+        "target_node_id": "node_9"
+      },
+      {
+        "id": "conn_8",
+        "content": "Explanation of RL strategies in Deep SEQ paper",
+        "source_node_id": "node_10",
+        "target_node_id": "node_11"
+      },
+      {
+        "id": "conn_9",
+        "content": "Explanation of RL from Verified Rewards regime",
+        "source_node_id": "node_12",
+        "target_node_id": "node_13"
+      },
+      {
+        "id": "conn_10",
+        "content": "Explanation of LLM quality requirement",
+        "source_node_id": "node_14",
+        "target_node_id": "node_15"
+      },
+      {
+        "id": "conn_11",
+        "content": "Explanation of token context length evolution",
+        "source_node_id": "node_16",
+        "target_node_id": "node_17"
+      },
+      {
+        "id": "conn_12",
+        "content": "Explanation of reasoning ability emergence",
+        "source_node_id": "node_18",
+        "target_node_id": "node_19"
+      }
+    ]
+  },
+  "topic_24": {
+    "title": "The Path to AGI and Its Implications",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Computer RL (Reinforcement Learning)",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Minimum Base Model Quality and Long-term Coherency",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "AGI (Artificial General Intelligence)",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_4",
+        "content": "AGI as better than most humans at most computer-facing tasks",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Importance of AGI in addressing intellectual labor",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Sample Efficiency in Humans vs. AI Models",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Feedback Loop in Reinforcement Learning",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Competence in Mathematics and Competition Code",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Generalization of RL Approach to Other Domains",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "Potential of AI Models to Surpass Human Capabilities",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "Implications of Creating AGI",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Relationship between Computer RL and AGI",
+        "source_node_id": "node_1",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_2",
+        "content": "Definition of AGI",
+        "source_node_id": "node_3",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_3",
+        "content": "Explanation of AGI's importance",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_4",
+        "content": "Explanation of Sample Efficiency",
+        "source_node_id": "node_4",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_5",
+        "content": "Feedback Loop in RL and Competence in Narrow Domains",
+        "source_node_id": "node_7",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_6",
+        "content": "Generalization of RL Approach",
+        "source_node_id": "node_7",
+        "target_node_id": "node_9"
+      },
+      {
+        "id": "conn_7",
+        "content": "Potential of AI Models to Surpass Human Capabilities",
+        "source_node_id": "node_9",
+        "target_node_id": "node_10"
+      },
+      {
+        "id": "conn_8",
+        "content": "Implications of Creating AGI",
+        "source_node_id": "node_10",
+        "target_node_id": "node_11"
+      }
+    ]
+  },
+  "topic_25": {
+    "title": "Debate on AI Approaches and Future Prospects",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Our models don't learn as efficiently as humans.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "Transformers are insufficient architecturally.",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_3",
+        "content": "Transformers can model anything with sufficient data and compute.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "RL as an objective is powerful.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Encoding too many priors with pre-training.",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_6",
+        "content": "Current methods haven't found an intractable problem domain.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Progress is rapid when benchmarks are set.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "There is a serious chance of achieving AGI.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Belief in a plateau in AI progress.",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_10",
+        "content": "AI models are far from a plateau.",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "AI models have room for improvement.",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Countering the claim that transformers are insufficient.",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_2",
+        "content": "Supporting the power of RL as an objective.",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_3",
+        "content": "Supporting the claim that current methods are effective.",
+        "source_node_id": "node_6",
+        "target_node_id": "node_7"
+      },
+      {
+        "id": "conn_4",
+        "content": "Supporting the potential for AGI.",
+        "source_node_id": "node_7",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_5",
+        "content": "Countering the belief in a plateau.",
+        "source_node_id": "node_9",
+        "target_node_id": "node_10"
+      },
+      {
+        "id": "conn_6",
+        "content": "Supporting the argument that AI models have room for improvement.",
+        "source_node_id": "node_10",
+        "target_node_id": "node_11"
+      }
+    ]
+  },
+  "topic_26": {
+    "title": "Sonnet 4.5's Performance Across Various Domains",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Sonnet 4.5",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Sonnet 4.5 performs across different domains like economics, research, and finance",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_3",
+        "content": "GDP eval by OpenAI",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "4.1 Opus was the leading model in GDP eval",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "GDP eval demonstrates a breadth of tasks across all parts of the economy",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Experts describe what success looks like for models to be measured across sectors",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_7",
+        "content": "Bureau of Labor Statistics",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_8",
+        "content": "Breaking down jobs into tasks to measure AI progress over time",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "AI models may reach better than human performance on GDP eval",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "Current measures may not change anything economically due to lack of context",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "Models are generally strong across all areas",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_12",
+        "content": "Policymakers should invest in measuring AI progress",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Sonnet 4.5 is related to GDP eval",
+        "source_node_id": "node_1",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_2",
+        "content": "GDP eval demonstrates breadth of tasks",
+        "source_node_id": "node_3",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_3",
+        "content": "4.1 Opus as leading model is an example of GDP eval performance",
+        "source_node_id": "node_4",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_4",
+        "content": "Experts' role in measuring models across sectors",
+        "source_node_id": "node_6",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_5",
+        "content": "Bureau of Labor Statistics related to task breakdown",
+        "source_node_id": "node_7",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_6",
+        "content": "Explanation of economic impact of AI models",
+        "source_node_id": "node_10",
+        "target_node_id": "node_9"
+      },
+      {
+        "id": "conn_7",
+        "content": "Policymakers' role in AI progress measurement",
+        "source_node_id": "node_12",
+        "target_node_id": "node_11"
+      }
+    ]
+  },
+  "topic_27": {
+    "title": "Preparing for a Future with Advanced AI",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Planning for a world with more individual leverage",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_2",
+        "content": "Using coding agents to increase work output",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Future potential of coding agents",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_4",
+        "content": "Digital domain leverage",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_5",
+        "content": "Solving important world problems",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_6",
+        "content": "Improving the world through digital and physical leverage",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_7",
+        "content": "Challenges in robotics",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_8",
+        "content": "Moravec's paradox",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_9",
+        "content": "Critique of Moravec's paradox",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_10",
+        "content": "Robotic locomotion advancements",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_11",
+        "content": "Locomotion as an easy RL signal",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_12",
+        "content": "Progress in robotics labs",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_13",
+        "content": "Generator verifier gap in robotics",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_14",
+        "content": "Use of language models in robotics",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_15",
+        "content": "Stacking blocks task",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_16",
+        "content": "Role of language models in planning",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_17",
+        "content": "Focus of robotics labs",
+        "speaker": "Sholto Douglas"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Example of using coding agents for leverage",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Relation between individual leverage and future potential",
+        "source_node_id": "node_1",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Relation between digital domain leverage and solving world problems",
+        "source_node_id": "node_4",
+        "target_node_id": "node_5"
+      },
+      {
+        "id": "conn_4",
+        "content": "Relation between solving world problems and improving the world",
+        "source_node_id": "node_5",
+        "target_node_id": "node_6"
+      },
+      {
+        "id": "conn_5",
+        "content": "Relation between robotics challenges and Moravec's paradox",
+        "source_node_id": "node_7",
+        "target_node_id": "node_8"
+      },
+      {
+        "id": "conn_6",
+        "content": "Explanation of Moravec's paradox critique",
+        "source_node_id": "node_8",
+        "target_node_id": "node_9"
+      },
+      {
+        "id": "conn_7",
+        "content": "Example of robotic locomotion advancements",
+        "source_node_id": "node_9",
+        "target_node_id": "node_10"
+      },
+      {
+        "id": "conn_8",
+        "content": "Explanation of locomotion as an easy RL signal",
+        "source_node_id": "node_10",
+        "target_node_id": "node_11"
+      },
+      {
+        "id": "conn_9",
+        "content": "Example of progress in robotics labs",
+        "source_node_id": "node_11",
+        "target_node_id": "node_12"
+      },
+      {
+        "id": "conn_10",
+        "content": "Relation between generator verifier gap and language models",
+        "source_node_id": "node_13",
+        "target_node_id": "node_14"
+      },
+      {
+        "id": "conn_11",
+        "content": "Example of stacking blocks task",
+        "source_node_id": "node_14",
+        "target_node_id": "node_15"
+      },
+      {
+        "id": "conn_12",
+        "content": "Relation between language models and planning",
+        "source_node_id": "node_14",
+        "target_node_id": "node_16"
+      },
+      {
+        "id": "conn_13",
+        "content": "Explanation of robotics labs' focus",
+        "source_node_id": "node_16",
+        "target_node_id": "node_17"
+      }
+    ]
+  },
+  "topic_28": {
+    "title": "Conclusion and Future Outlook",
+    "nodes": [
+      {
+        "id": "node_1",
+        "content": "Express gratitude for the conversation",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_2",
+        "content": "Express pleasure in participating",
+        "speaker": "Sholto Douglas"
+      },
+      {
+        "id": "node_3",
+        "content": "Thank listeners and suggest actions to support the podcast",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_4",
+        "content": "Build the podcast and get great guests",
+        "speaker": "Matt Turk"
+      },
+      {
+        "id": "node_5",
+        "content": "Conclude with a farewell",
+        "speaker": "Matt Turk"
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn_1",
+        "content": "Express gratitude for the conversation followed by expressing pleasure in participating",
+        "source_node_id": "node_1",
+        "target_node_id": "node_2"
+      },
+      {
+        "id": "conn_2",
+        "content": "Express pleasure in participating followed by thanking listeners and suggesting actions",
+        "source_node_id": "node_2",
+        "target_node_id": "node_3"
+      },
+      {
+        "id": "conn_3",
+        "content": "Suggesting actions to support the podcast is related to the goal of building the podcast and getting great guests",
+        "source_node_id": "node_3",
+        "target_node_id": "node_4"
+      },
+      {
+        "id": "conn_4",
+        "content": "Conclude with a farewell after suggesting actions",
+        "source_node_id": "node_3",
+        "target_node_id": "node_5"
+      }
+    ]
+  }
+}
