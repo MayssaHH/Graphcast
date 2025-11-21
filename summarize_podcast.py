@@ -36,7 +36,7 @@ def summarize_from_structured_data(structured_file: str) -> str:
 
     The summary should be detailed enough to give someone who hasn't listened to the podcast a complete understanding of the content, but concise enough to be readable.
     Format your response as a clear, well-structured summary with appropriate sections if needed.
-"""
+    """
     
     print("Generating summary from structured data...")
     try:
