@@ -1,0 +1,342 @@
+Sholto Douglas
+So finally, this year is where the compute super cycle is like beginning properly. People have said that we've hitting a plateau every month for the last three years. I look at how these models are produced and every part of it could be improved so much. It is a primitive pipeline held together by duct tape and the best efforts in elbow grease and late nights. And there's just so much room to grow on every part of it, I think worth crying from the rooftops. Anything that we can measure seems to be improving really rapidly. Bet on the exponential.
+
+Matt Turk
+Hi, I'm Matt Turk from firstmark. Welcome to a special episode of the MAD podcast for the release of Claud Sonnet 4.5 this week with the incredible shelter Douglas, a leading AI researcher at Anthropic. In this conversation we go behind the scenes of how Sonnet 4.5 became the best coding model in the world and what happens when you enable AI agents to work for 30 hours straight. Beyond the launch, we talked a bunch about Frontier AI, how big AI labs operate, and how we are well on our way to AGI. At my request, Sholto made this conversation very approachable by breaking down a lot of key concepts so such as reinforcement, learning, computer use and AI benchmarks. In plain English without the jargon. Please enjoy this great chat with Sholto. Sholto, welcome.
+
+Sholto Douglas
+How you doing? Great to be here.
+
+Matt Turk
+Congratulations on the Release of Sonnet 4.5 which is the big news of this week. I was just looking back as I was prepping for this and I was struck by the pace of releases at Anthropic in particular sonnet 3.7, which was like this huge deal at the time. In my mind. If you had asked me have said oh no, that was last year, but in fact it was just in February of this year. What's the right way to think about that pace of releases? Is that a proxy for progress accelerating?
+
+Sholto Douglas
+Yeah, I think that's a proxy for a couple of things. One is that there's now this two paradigm regime where previously you did pre training scaling and reinforcement learning scaling and now we're in a mix, in a mix of the two basically. And so I think that gives you more opportunities to update models because it means that you can make advancements along multiple frontiers and then that means that you just end up shipping more frequently. I think it's also a reflection of the fact that this is now 2 ish years after ChatGPT. 2 and a half years after ChatGPT. And so the post ChatGPT investment cycle is finally hitting where compute availability is increasing and all of this. And so it means that you should expect actually the pace of progress to be. And because there's lead times in the. In commissioning chips, basically. So even if you. As much as you wanted chips last year, it would have been impossible to get them because TSMC was booked out and so forth. So finally, this year is where the compute super cycle is like beginning properly, in effect. Yeah, great.
+
+Matt Turk
+Maybe for situational awareness, for people listening to this, the Sonnet, this Opus.
+
+Sholto Douglas
+Yes.
+
+Matt Turk
+Is this your haiku somewhere? Maybe. Walk us through the differences between those models.
+
+Sholto Douglas
+Yeah. So we release models along three categories, three tiers. So Opus, which is the smartest model, Sonnet, which is the mid tier model, and Haiku, which is the fastest, cheapest model. One of the interesting things about this most recent release is actually Sonnet is smarter than Opus. And this has happened before. In fact, this happens last year. It's a reflection of fast progress because it is cheaper to train mid tier models and large models. And so what happens is that you end up doing a lot of progress on smaller models. Eventually you need to choose when to scale up and sort of get the benefits of scale in a model. Often you make progress fast enough that your mid tier model is great anyway and it's actually better than the large scale up model that you did previously. And I think this is also a little bit of a reflection of the reinforcement learning paradigm where you can take a model and you can train it and it is. And extend it with reinforcement learning, basically. So that allows you to take a mid tier model and make it as good as a larger tier model of six months ago or three months ago.
+
+Matt Turk
+All right, so before we go into all of this in greater detail, I was curious about your story, your journey to Anthropic and then what you currently do at Anthropic, how you describe your role.
+
+Sholto Douglas
+Yeah. So I think. How far back do you want me to start? You know, from the beginning.
+
+Matt Turk
+From the beginning?
+
+Sholto Douglas
+Yes, from the beginning, yeah. So a couple of things. One is that growing up in Australia, there's a very traditional set of paths you can take. You can become a lawyer, you can become a doctor, or you can go into finance. Australia is like a wonderful country in so many ways. In particular, the quality of life is so high that it means that people just like, choose these default paths. Have a fantastic life. And I was very lucky in some ways. My mom was actually. She was frustrated in her ambitions and so this meant that I had the perfect mentor throughout my entire life. She studied medicine, went on to do emergency medicine in South Africa, but wasn't ever quite able to break into public health in the way that she wanted to. She wanted to do systemic change in public health. And at the time, that was just very difficult for a woman. So instead I had her full attention. So this great, you know, like, growing up, when I did exchange in China, I got this dossier this thick of like China's political economy and different actors in the, you know, current startup ecosystem and this kind of stuff. So I had this like wonderful, constantly driving education in a really supportive and wonderful way. I also was lucky enough to get into fencing. And through fencing I had the experience of becoming one of the best in the world at something. Via repeated effort, I became the top 50 in the world at my best, 43rd. And it was partially a consequence of, well, I think in large part due to having a coach and perfect mentorship that was one of the best in the world. He moved to Australia because his wife was Romanian. He just coached it. He had just coached Italy to the gold medal in the Olympics, Moved to Australia because his wife was Romanian. She was facing discrimination in Italy. And so I had, on the one hand perfect academic mentorship and on the other hand, perfect athletic mentorship and a proving ground to like, watch, you know, grow up watching these people on YouTube and then become one of the best in the world at something.
+
+Matt Turk
+Early introduction to reinforcement learning. Like, do this, don't do that.
+
+Sholto Douglas
+In some ways, yes. Or, or in. In. In other ways, like an introduction to. You can watch these people on YouTube and analyze what they are doing to become who they have been, who they are and replicate that and you can be part of that world. All it just takes is intense amounts of effort.
+
+Matt Turk
+It's a thing that I find fascinating that across any field, the fundamental impact of YouTube and the fact that regardless of the field you look at, every kid seems to be just much better than the prior generation. I don't know if it's been studied, but at least that's your experience.
+
+Sholto Douglas
+Yeah, and I think we should see the same thing with AI, right? Like in the same respect. Everyone will now get a perfect tutor. I then actually had that experience again with AI. Fencing wasn't something I wanted to do ultra long term. I wanted to take a shot at the Olympics and then try and progress into working in technology, basically. I was very lucky to read a GWERN essay on scaling where he basically details the scaling hypothesis. After reading that, I was like, oh my God, this is absolutely like clearly AGI progress over the next Decade is going to be one of the most meaningful things to work on in the world. It's the largest level we have to have, like, meaningfully advance the world. And so I started doing my own research on nights and weekends and as like, part of. Part of.
+
+Matt Turk
+How old were you then?
+
+Sholto Douglas
+So this is like last year of undergrad, like in the year after.
+
+Matt Turk
+And in undergrad you did.
+
+Sholto Douglas
+I did computer science, robotics, and I, like, sort of vaguely. I grew up, like, looking up to, like, Elon Musk and this kind of stuff. You know, I wanted to, like, build rockets and Tesla, but I didn't have, like, a concrete idea of what actual problem I wanted to solve. Reading that essay was the critical hinge of, okay, AGI is possible this decade. It seems like the most meaningful thing in the world to work on, and I need to figure out how I can demonstrate that I should be working on this. I was at the time working on robotic manipulation stuff. And so I started working on, like, scaling up robotic manipulation, trying to train general foundation models for robotics from the bedroom, which is now a big thing. There's a lot of general foundation models for robotics companies. It was a little bit early then, but, you know, I rigged up my own simulator, collected a lot of teleoperation data, trained models, got a loan of TPUs from Google. Eventually some people at Google noticed the work I was doing and said, hey, this is. This is great work. Would you like to come work with us? It's actually very fortuitous because, for example, I didn't get into the PhD programs that I wanted to. I applied to a couple of PhD programs here after undergrad and didn't get in. But I was very lucky that the work that I was doing really resonated with Google. And so, and so they reached out.
+
+Matt Turk
+Which is a fascinating concept that at some point you could have had an academic roadblock, but still succeed to the extent that you're currently succeeding. For people maybe outside of the AI research world, it sort of feels like whoever is the smartest academically wins.
+
+Sholto Douglas
+Right?
+
+Matt Turk
+But does that suggest that being great academically and being a great anthropic researcher are two different things? You need slightly different qualities.
+
+Sholto Douglas
+I think they're very highly correlated. But I think the signals that are usually used to gate academia are like, there are dramatically more people that satisfy, like, the criteria of being really effective than there are that have the correct signals that would then, like, enable them to progress the next stage in academic career. For example, if you're here in the US you end up doing as an undergrad research that can get you in Europe. So ICLR paper, whereas in Australia just isn't the case. Right. I remember Peter Aviel actually once visited our lab in Australia and asked people to put their hands up if they were going to Europe. And no one put their hands up, not even the PhD students. So it means you don't have again, that mentorship aspect that is so important. And so you don't get a chance to develop problem taste on the things that mattered. And therefore you don't have the correct signals that indicate you would have high potential for academia. I actually think that right now a lot of the signals you look for aren't traditional PhD or anything like this. I mean, this is obviously very useful. But the fastest route or the most immediate one is whenever we see a really good blog post where people have done incredible amount of work in an independent fashion, it's one of the highest signal things there is. One of the examples I'd love to use here is this guy called Simon Bohm who's one of the leads on the performance team at Anthropic and he's published to date the best guide on how to optimize a cuda matmul on a gpu. It is simply the belt's best cuda mat mole guide. No one has done this retention, right? If someone did this retention, then I mean, we would reach out with a job interview offer the next day, right? And in fact someone did it for TPU and for some kind of retention the other day and we were like this guy immediately, let's send out a request to interview. So I think there is actually, there is an absence of agency, there's an absence of taste, and there are still many ways to like and there are ways to demonstrate this, usually by producing a world class artifact in some independent fashion.
+
+Matt Turk
+Yeah. And a little bit to this conversation and the YouTube discussion, do you see the pool of talent in AI research, whether academically sanctioned or sort of like more indie? Is that growing?
+
+Sholto Douglas
+Okay, yeah, I think it's growing quite dramatically. I also think we have done a pretty good job of growing people. And I mean, I think Anthropic has taken many, many junior people and grown them into really fantastic researchers and engineers in quite a deliberate way. So I think it's definitely growing.
+
+Matt Turk
+So Google noticed you and then what happened?
+
+Sholto Douglas
+So Google noticed me. I started at Google, I think like a month before ChatGPT or something like this. So it was actually, it was a fantastic time to start at Google because the entire company was suddenly forced to react instantaneously and compete with the Gemini program. So it meant that there was this gap of I guess like the typical command structures and everything were not well suited for that particular battle. It wasn't a pre existing Org, you know, Gemini was sort of forged out of the found out of the merging of of Brain and DeepMind meant that there was just a huge gap in terms of agency really of figuring out what we needed to do, doing it as fast as possible, organizing people together to, to work on important things. And so I ended up one, getting the chance to do develop a lot of taste by working closely with people in those early months of Gemini. But two also quickly got the opportunity to step up and to lead various parts of this. So one example of this is we just didn't have an inference stack that was at all like sensible for the modern world of LLMs. And so we had to notice that design one from scratch. A lot of the things you now see in, you know, like the sort of SG Langs and stuff of the world are like things that we had to derive from first principles at that point in time. And we wrote the inference stack. This ended up saving several hundred million dollars I think even over the first six months. And meant that I was then trusted to solve both hard technical and sociopolitical problems. Because one of the interesting things about the inference stackers problem was that it was both a really large technical challenge and a large sociopolitical one because the ownership of the pre existing SAC was distributed across like five or six different teams. And it meant that actually enacting change was quite hard. And so we had to. It was a challenge along multiple dimensions that then led to me having the trust to solve problems of this form across other parts of the ML stack. Um, and so for example, later on for the, when the, when the thinking strike was started, you know, the reasoning strike, I was in charge of research infrastructure for that to get us an RL code base that could actually like allow us to do large scale RL and reasoning and this kind of stuff. Great.
+
+Matt Turk
+And then the move to Anthropic and.
+
+Sholto Douglas
+Then the move to Anthropic. So the move to Anthropic was in February of this year. And I think it was motivated by a couple of reasons. The number one one is I'm just really excited by how deeply every single person in the company cares about how the future goes. And I think that's one thing that really struck me is everyone at Anthropic has an articulated theory of why what they're working on contributes towards the a better future. Whether that is AI that is better in ways that can help people improve their lives, or whether it's because it's AI that's more safe and controllable and aligned with our civilization's interests, or even just more deeply understanding what's actually going on inside this AI and trying to better forecast the progress curves and where we think we're actually headed or policy. Such a strong advocate for policy. In many ways it's fascinating as a.
+
+Matt Turk
+Thought, again, seen from the outside of the big AI research labs, a little bit of a question is, you know, how different are those? It seems that everybody is incredibly smart, everybody has access to the same resources directionally, more or less. People seem to be focusing on the same problems. And then you see, you know, one model comes out and it's better and then, you know, a week later that's another model that comes out from another lab and is better than the prior one. But from your experience, you see real differences in terms of like culture and goals.
+
+Sholto Douglas
+Yeah, I think there are, for example, DeepMind, if you wanted to solve science, is the best place in the world. I think that DeepMind will directly contribute to more scientific discoveries from AI than anything else. Absolutely. And I think it's just so well set up to do this across every aspect. You've got both the direct scientific efforts like Alpha Fold and the material science work and this kind of thing, and also generally large efforts to do AI like make AI scientists and all that. Whereas I think anthropic has been laser focused on two things. One is long term AI alignment and two is near term economic impact. So anthropic has been laser focused on coding and computer use and things that we think will make a direct impact to the economy within the next six months. You know, one thing that anthropic like you noticeably hasn't focused on compared to DeepMind and to OpenAI is mathematical reasoning. Right. DeepMind and OpenAI have been pursuing mathematical reasoning because of the implications for science and for scientific progress. And because I think so many people that just love math so deeply and would love to see the field progress, we've had to reluctantly sacrifice a focus on that because we want to focus on. Well, it's partly for many reasons, but we want to focus on near term economic impact with the models and then. And much of our research along other dimensions is.
+
+Matt Turk
+Yeah, let's double click on this in a minute. But before we do that, you mentioned a couple of times the word taste.
+
+Sholto Douglas
+Yeah.
+
+Matt Turk
+Which is One of those important words in 2025, what does taste mean when it comes to AI research?
+
+Sholto Douglas
+Yeah, I had a really interesting discussion about this with a biology friend. We were comparing taste across biological research and ML. I think one of the most important things is mechanistically understanding exactly what you're trying to do and having an important simplicity regularizer. When you think about taste in ML, it's often it's the crucial ingredient that allows you decide what goes into your large like training run when you have imperfect information. Because we can study very deeply what the impact of an architectural change is. Right. But past a point, past a certain level of scale, you have to guess whether or not the impact of that change will compound with other ones, whether it will conflict because you can't test your full scale run end times, you only have one shot at that. And so a lot of taste comes from being able to make good inferences about do we think that this ultimately will deliver increasing returns to scale? It also comes down to do. I think this direction of research is worth pursuing because often our baselines in ML are so well tuned that it's very hard to beat them, even with what is theoretically a better method. Because there are so many small tricks that are required to make a machine learning method work and they can fail for any number of reasons. It's not like building a bridge where you actually have a pretty good idea why a particular shear was introduced. It can be all these quirks. And so knowing whether it's right to push along that direction or to give it up and try something else is another question. Taste, and I think it always comes back to the simplicity regularization of. People love to be clever. We all do. And that the bitter lesson, I think is maybe the best expression of this. Where generations of people have developed clever methods of encoding priors about how they think an artificial intelligence should reason and encoding it into the model. And all of this gets wiped out by scale and planning. Basically search and learning and scale as applies to those two things.
+
+Matt Turk
+And the bitter lesson being the Richard Sutton essay, which everybody in AI knows about, but people may, not everyone may have ever heard it, which is exactly what you described, this idea that generalization and compute will win over time.
+
+Sholto Douglas
+Yes, exactly. Methodist can take advantage of compute. And this is like in particular, search and learning will wash away all tweaks. I think I can offer a couple of examples of this in some ways to make it more concrete. One of the reasons that convolutional neural networks were more effective is they encode A prior in convolutional neural networks, in many ways, you can think of it as a little square being drawn across an image, so to speak, that nearby pixels are related to each other. And this is very sensible, prior. Right, because if you throw a picture at an AI model and you don't tell it anything about the world, it has to learn that nearby pixels form curves that then form other things. And so there's this hierarchy of abstractions, but ultimately that is not true of all images. And so convolutional neural networks will be better than a more general, like a vision transformer for the vast majority of images up to a certain amount of scale. But past a point, actually, you need to be able to flexibly integrate information across the entire image. And a similar example in language might be, well, we know a lot about grammar, and so you might actually want to decompose a sentence into the constituent, the verbs, the nouns and how they relate to each other and so forth, and provide that explicit structure to your AI algorithm. But then what happens when you want the model to write poetry or to write code? All of a sudden these assumptions have to be thrown away. And so you can't generalize across poetry.
+
+Matt Turk
+And code and writing and to the taste. Discussion, the art versus science part of this. So are you saying that at least in terms of anticipating how the training run may go, it's more intuition than actual numbers.
+
+Sholto Douglas
+So you can do actual numbers up to a point. The way to sort of illustrate or think about this is you are testing a system at multiple levels of scale. And actually the analog to biology was, if you think about it, you might test a new therapeutic in a cell and in mice and in model organisms. But that's no guarantee that it will work in a human, right? So you test across multiple different scales and multiple different model organisms, and it seems to work in basic single cell bacteria, seems to work in mice, maybe works in monkeys. That gives you a lot of indication it's going to work in humans, but it's not a guarantee. So at that point you need to understand the underlying mechanisms of how does this thing work, like what receptors is it binding to? And so forth. And in ML, it's exactly the same, right? You have your different model scales and you figure out, well, okay, it's delivering benefits of these model scales. And I think it should work because mechanistically, I understand what this is doing to the learning dynamics of the model. And then you can have confidence that it's going to work. But if it's like oh, it's a hack and we don't really understand how it works and it's really complicated and introduces all this stuff in the code.
+
+Matt Turk
+Then how often does a, an ID fail in a company like Anthropic or in general.
+
+Sholto Douglas
+Yeah, or in general. I mean, I think a good example here is I once asked this question of Noam Shizia and he was like, yeah, maybe like 10% of my ideas work. And that's norm, right? You know, one of the, you know, an absolute genius, one of the best in the field. So if only 10% of his ideas work, then I think that establishes a bound on, on the percentage of ideas work, most don't.
+
+Matt Turk
+And it's part of the success again of a place like Anthropic or DeepMind to just encourage people to just experiment again and again. And I mean those are very expensive runs, right?
+
+Sholto Douglas
+Like.
+
+Matt Turk
+Just to say the obvious big reason behind the massive amounts of capital going into those companies is that the compute is expensive. And I'm curious about the culturally the tension between, you know, you need to deliver because there's so much money at stake versus no, you should have just a free open mind and, and just go, go for it.
+
+Sholto Douglas
+It's one of the things that at both anthropic and at DeepMind we really tried to build, which is like a culture of safe experimentation where people were trusted to explore ideas for a long time out in the wild because you, you often need months of independent research to really prove out a novel research direction that is, that is like a substantially different one. This is, it's hard particularly I think it's hard actually less from the, the compute cost of the experiments and more from a cost of time and focus because there are so many like remaining wins I guess and even in like the, the current architectures and paradigms and everything in such a way that. Or maybe there's so many low hanging fruit, right? Like a really high ROI use on your time would probably be to just go and look at the data and think hard about what the model is learning or doing and make some tweaks to that makes it. You could even just the simplest things in the world will still deliver massive gains. And so asking people or giving people the time and space to breathe and say, well we know that there are short term things you could be doing, but actually we wanted to try and develop a more general or fundamental technique that allows you to scalably do this in future is important. There's this tension between doing things that scale and doing things that don't scale. Right.
+
+Matt Turk
+Are there people at Anthropic or other places that are deeply researching completely different avenues? So non Transformers, non rl.
+
+Sholto Douglas
+Yeah. I think this is another way in which Anthropic and DeepMind differ a little bit. Anthropic is a very focused bet. We think that AGI is within reach in the next couple of years. We think that it's the current paradigms or something not crazy dissimilar to them. Maybe there's something new, but it's not like, it's not like we think it's like some crazy out there research program. Right. Like really for the last five or six years, Anthropic's ethos has been scaling compute with broadly. The current set of techniques is like AGI is tractable within those bounds. DeepMind has a much broader scientific culture because it has the resources to do so. Right. Anthropic has to be a Focus bet. DeepMind has the time and space to be like, well, we're happy to bet on something that is like really far outside the current paradigm. And I think depending on which kind of question you want to ask, whether you think the really focused bet or the wide exploration of different and novel architectures is better, that's like one of the sort of research ethos differences. Not to say that Gemini itself is a very focused bet, but if you look at Gemini as a thousand people, then there's still like 10,000 plus people doing all kinds of really long term foundational research at Demi.
+
+Matt Turk
+Yep, got it. So closing the loop on something that you mentioned earlier. Why is Anthropic so focused on coding?
+
+Sholto Douglas
+Yeah, we're really focused on coding for two reasons. The first one is that we think it is the, how should I say, it's the thing that will allow us to assist ourselves in AI research fastest. So there's this notion of automating AI research and that work. We think that one of the most important signals of whether or not we are basically the speed of takeoff, the speed of progress, is driven by how much AI is able to assist AI research. And so pre fetching this is really important, we think. Secondly, we think it's the nearest term tractable problem domain in terms of economic impact. For Anthropic to be a viable research program that can research the things that we think are important requires economic return. And coding is a huge market full of people who are really, really, really like keen early adopters who love trying and switching things, who are really excited to play with new tools. Um, it's. There's Massive, massive demand. There's dramatically more demand for software in the world than there is, you know, good software. We've seen that in every previous iteration of, you know, compilers and like, general, like web abstractions and so forth. Like, there's just a booming demand for software. And so, like, you know, I mean, yeah, basically the models are better at coding earlier than anything else. Because coding is a uniquely tractable problem in some respects. For the techniques that we have, in terms, the data exists in many ways. You can containerize and run things in parallel, you can run unit tests and so you can verify that you know.
+
+Matt Turk
+When it works and know when it works.
+
+Sholto Douglas
+You know, self driving is uniquely hard. Right. You need the car to work. Yeah. First time, kind of. Or like.
+
+Matt Turk
+Yes.
+
+Sholto Douglas
+Whereas coding, the models can fail 100 times. As long as it succeeds once, then that's fine. So there's this tractability, there's this replayability that doesn't exist in other fields that touch the real world. In some ways, you don't want a lawyer arguing your case. That is an AI, Right. Because what if it gets the case wrong? Sorry. So as techniques develop, coding is uniquely tractable. It is. And you can see that, right? Like, already, people are dramatically. I myself am dramatically like higher productivity when I'm using the AI tools to write code. And I have a friend who manages nine Claude codes, which is just like a crazy number. I don't know how he does that. I can only handle two, so it's maybe like a skill issue on my behalf.
+
+Matt Turk
+All right, so Sonnet 4.5 is presented as the best coding agent in the world. So maybe unpack that for us. Including performance on the SWE bench. Yeah, Benchmark. What are the numbers? What are the facts? And then we'll go into how that works.
+
+Sholto Douglas
+So SWE bench is the current benchmark for how we measure coding progress in the outside world, which all the companies use to evaluate against each other. It's an imperfect benchmark in many ways. Right. It is like 50%, one particular web framework and this kind of thing. But what it does do is it takes real world scenarios of work that people have done just submitting a pull request, so a change to a code base and that stuff that's on GitHub. Stuff that's on GitHub. Right. And it checks whether or not the model is able to do that same pull request and pass the same tests. Um, and this ends up being a pretty decent proxy for a sort of couple hours of work from a software engineer. All right. These Changes aren't incredibly complicated, but they reasonable complexity. A couple hours of work. We moved recently from roughly 72 to roughly 78 in suite bench, which is a pretty substantial step up. I think it's worth pointing out that, like, as recently as a year ago, I think we were under 20% or something like that as a field. So there's been dramatic progress on the ability of models to do this unit of work that a software engineer does. I think that SW bench is imperfect in a lot of ways, and it's probably pretty close to what we call saturated. One interesting thing to look at AI benchmarks is you see these. They lose their utility past the point because they no longer disambiguate the differences between different models of high capability. But the models one are sota. They're the best in the world on Sweetbench. It's a decent proxy. We're also, I think, more excited by the fact that a lot of our customers and partners are really excited by the model. So one example of this is the cognition folks in Devon found the model so useful they had to, like, rebuild their architecture around it.
+
+Matt Turk
+Yeah, yeah, they had a great blog post on this.
+
+Sholto Douglas
+A great blog post on this. Right. And I think that's the real measure of whether or not people. Whether or not a model is good is whether or not it enables people to do things that they couldn't do before. And really, coding as a whole has been transformed in this way over the last year. So let's roll back a year and we look at 3.5 sonnet, which is the first really strong agentic coding model, the first model that you could ask to do something in front of you, and it sort of was able to interact with your code base and your computer and do it in many ways. This model is what caused PMF for Cursor. Cursor took off like a rocket with 3.5 sonnet, because they were in the right place and they were able to capitalize on that model as offering a coding experience that didn't previously exist. And then actually Cognition and Windsurf went for an even more ambitious target. So basically, there's like a spectrum of agency here where either you can ask it to do 30 seconds of work or a couple of minutes of work. Windsurf was made as a company in part by betting more aggressively on the agentic abilities of 3.5 Sonnet, then roll into this year, which, just as a.
+
+Matt Turk
+As a quick aside, is one of the key lessons for anybody in the startup world.
+
+Sholto Douglas
+Yes.
+
+Matt Turk
+In 2020, five, which is bet on what the models will be able to do in six months from now.
+
+Sholto Douglas
+Right, exactly. Bet on the exponential. So I think something that a lot of coding startups are now asking themselves is what can they now do with models that are capable of independently pursuing goals for substantially longer than previous goals before you had to supervise the models every 30 seconds over time. Over the next couple of months, you're probably going to end up in a situation where you only need to supervise the models every 10 minutes, 20 minutes or so. That's a pretty dramatic change depending on the complexity task even. We have a couple of examples. I think it was mentioned the blog post where we asked it to build something that looks roughly like a chat app, you know, something like Slack or, you know, and it was. The model just worked for 30 hours. Like it was just spinning there on a computer for 30 hours and came out with a really good working Slack, like, you know, teams like app. It was pretty incredible. Yeah, that is nowhere near built into any of the existing products. Maybe cognition, I think is always bet on a longer running, more independent agentic sui and maybe this is the moment that really hits PMF for them. For example.
+
+Matt Turk
+Yeah, let's unpack the 30 hour aspect, which is fascinating. So first of all, to just ground it for people. So this is a computer use, just coding, I think. Just coding. So what does the agent do for 30 hours? Clicking on stuff.
+
+Sholto Douglas
+Yeah, it is there. It's reading files and it's writing code and running tests. So in exactly the same way that a human would. Basically you can think of the model as running in a loop where it can constantly decide what to do. People often mention something called tool use. And tool use is the ability to. Well, I mean it's in the name, but in this case it can use things like tools like read file, write file, et cetera, or run code in the terminal. And it is sitting there in a terminal, on a computer in a loop, just constantly looking at the current code, deciding, oh well, it can't quite do this yet, so I'm going to work on that next. It's often making plans particularly to run for 30 hours. One of the things that we're pretty happy with about the recent launches, we finally taught the models to use what's called memory and we've built that into the agentic harness. So it's able to create a markdown file of to dos and things that it thinks are important to do, check them off and work on them and check whether they've been completed. There's almost this like self verification loop. One of the things that people were worried about with language models over like I think a year ago or so was that they would fall off track, like they wouldn't be able to self correct and that this would basically ruin their utility. I think one of the things that may be remarkable about the current generation of agents is that they can self correct. In fact, they're astonishingly good at self correcting and this like immersion ability has been pretty helpful.
+
+Matt Turk
+Yep. So much to unpack on this. So this, I think I heard you speak about two axes in the past, one being raw intelligence and the other one being how long an agent can operate. So is the fundamental breakthrough, in very simple terms that if you can do it longer, you basically have a very smart AI that can just work longer.
+
+Sholto Douglas
+Yeah, exactly. If you can maintain long term coherency, then the model is able to do things that it couldn't possibly have done in, you know, if I, if I asked you to just in a single stream of thought write a, you know, Slack or Microsoft Teams working version of one of those, you wouldn't be able to do it. Right. You have to sit there for, you have to sit there and take notes, like do this like closed loop feedback system. So long term coherency is really important and it's something that we think is just like really critical for this. I think a good way of measuring this is to look at the meter evals. They're probably my favorite eval at the moment. And what this eval is is they've taken a bunch of tasks which humans do, particularly in like the machine learning or programming context, and they've annotated how long it takes a human to achieve strong performance of those tasks. And then they ask AI models to do them. And what they found is that there's this really strong relationship between progress and the time horizon over which tasks are able, over which the AIs are able to complete tasks. And so I think it's like every couple of months the time horizon that the AIs are capable of doing is doubling or something like that. Something crazy. Maybe every six months the time horizon doubles, which is just, it's like, it's utterly insane. Yeah. Now again, like all benchmarks, this one is imperfect. Right. It only measures pretty simple tasks. It only measures I think 50% success rate or something like this at the task. Not like 99% success rate, but it's a good directional measure and it certainly resonates with my own experiences of, you know, as I'VE been using the recent models, I start to feel if I just set everything up right, I feel like I could leave this overnight and it could just churn away and it would probably have something pretty useful for me in the morning.
+
+Matt Turk
+Yeah. What are some examples of tasks that you can do with 30 hours that you could not do with shorter runs?
+
+Sholto Douglas
+Yeah, I think in this case the Slack like thing is a pretty good example where it's a significant piece of software. It's really like an end to end working piece of software which often takes a bit of time. Like not an MVP demo. Other things I think are interesting machine learning experiments and stuff like this are pretty interesting. You want something that's able to propose an experiment and write a bit of code, run some initial tests, come back later, et cetera. Really it opens up the world pretty dramatically. Basically working software rather than demos I think is the key thing.
+
+Matt Turk
+Right, Fascinating.
+
+Sholto Douglas
+Now I'm not saying that the models will spin you up a full working software right now. Right. It's not going to spin you up a Slack competitor. Yeah.
+
+Matt Turk
+Although the cloud AI demo that you guys produce is pretty cool.
+
+Sholto Douglas
+Yes. Right.
+
+Matt Turk
+I think we're seeing which for people who haven't seen it shows the progression of the models and how replicating the website went from basically impossible. Yes, caricature. But like doing wireframes to now doing a fully functional website based in the. Built autonomously by the.
+
+Sholto Douglas
+And it got some pretty complex features like you've got artifacts. Artifacts is in a. Is a feature where the model is able to write code and then the results of that code are displayed in the web browser. And in this case the model replicated Claude AI with artifacts with everything else. Uh, I can't quite remember how long that one took, maybe a couple hours to do. Um, but basically regard this as the first halting steps of this. You know it kind of works. Sometimes it won't work, sometimes it will. Over the next six months, over the next year, expect dramatic progress here. And like look at where we are now versus where we were a year ago. And the difference is I expect the same jump, basically.
+
+Matt Turk
+Let's double click on the breakthrough part of this. So Sunnet 4.1 I think was able to run up to 7 hours. In this case it's 30 hours, which I realize is not across all tasks, but that's the upper limit. You alluded to some of this memory evolution, this context, that's the ability to self correct, maybe explain in greater detail the advances that enable that jump to 30 hours.
+
+Sholto Douglas
+I think the biggest things here are the question that we often ask ourselves. What is preventing the models from working for longer, basically? Or when do you need to intervene? I quite like the model of interventions in a Tesla sense as an example, because right now you need to intervene quite frequently, but it's usually on questions of taste rather than it is questions of raw programming ability. It's not like the model is unable to when it's decided to do the right thing, to do it. But sometimes the models take shortcuts and sometimes the models forget the overall structure of what they're doing and they sort of lose themselves in the context they're doing a locally sensible change, but it doesn't actually make sense in the global context of what they're trying to achieve. And so I think a lot of the improvements both that we've made and that are still to go are on this, on this taste and context. Basically, it's on making the model better able to decide smart things about the overall structure of the program that it's going to do and. Not take shortcuts and write sensible good code.
+
+Matt Turk
+What about memory?
+
+Sholto Douglas
+Memory is also very important because the models do eventually run out of context, um, and sort of being able to manage the manage and like memory over time and sort of like, I suppose even learning from experiences is something which would probably help this a lot. You don't want the model to be constantly rediscovering facts about how a particular system or code base works. And now this is actually one of those areas where like the question of taste or like the bitter lesson comes up is because you can imagine us going and launching a massive effort to teach the models coding taste. And that could be one way that you solve taste Heaps of human software engineers decide, well, no, this is good or this is bad or whatever. Where does taste come from in software engineering? Or what do we regard as taste? It's typically that it's able to. It easily sets you up to make changes later on or so on and so forth. Or it's easy for maybe multiple agents to communicate with each other and collaborate. Often good abstractions are something that you or I could work together on a code base and not conflict with each other. And so there is this question of how much do you focus on teaching the model coding taste via getting software engineers to decide what is good or bad? Or should you be creating a society of models that all have to together code a giant monolithic code base and if they're arguing, then it's bad. You can sort of imagine the spectrum of potential strategies and picking the right one. There is a difficult thing.
+
+Matt Turk
+Going back to the jump in performance from last year's models, or even this year's models, or Even actually Sonnet 4.1 to 4.5 again to the point about the pace of progress accelerating. What were some of the breakthroughs that.
+
+Sholto Douglas
+I can't really talk about? Yeah, I think it's like important to recognize that it's not one individual breakthrough really. It is the continuous application of lots of different things across the entire stack for many people. And it's mostly just a function of compute in many ways. There are obviously individual breakthroughs, but fundamentally progress has been pretty, pretty smooth. Like on the meter eval, if you look at progress over the last two years, you can plot it with a straight line, right? And so similar to, you know, Moore's law of the past and this kind of thing, even Moore's law is made up of lots of individual improvements. It's not any one critical breakthrough. It's more the accumulation of a huge amount of work in an environment where there's a sort of exogenous force of compute pushing progress forward.
+
+Matt Turk
+Okay, so maybe let's talk about progress at a more abstract level, but grounded in 2025. So a big part of the discussion seems to have been the evolution from a focus on pre training to rl, which we touch upon a couple of times. Talk about the impact of RL and why is RL such a big part of the conversation today?
+
+Sholto Douglas
+For those listening, a good way to like understand at a, at a high level pre training. And RL pre training is like skim reading every textbook in existence. And RL is like doing the worked problems and getting feedback on whether you are wrong or right. And there are actually a lot of things that you can only learn via rl. And good example of this is the skill to say I don't know in response to a question. Because in pre training, remember you're modeling the, you know, you're trying to predict what, what text is going to come next in all of these textbooks, the entire Internet in the world. And so the only reason you would say I don't know as a pre trained model is if you think the character that you're modeling in the text would say I don't know, like if it's a likely completion. Right. Not whether you in fact don't know, but whether you think that the, the sort of player that you've pulled from this cast of characters that you could model would say I don't know. Whereas in reinforcement learning, you could in theory set up a battery of tests where there are things the model knows and things the model doesn't know. And you could reward it for correctly answering things it should know and penalize it for falsely answering when it doesn't know. And what it will then learn to do is it will learn to look up information inside itself and assess its own confidence in whether it knows that information. So saying I don't know or solving hallucinations intrinsically requires reinforcement learning in many ways. So that's one example. There's a whole bunch of things you can't otherwise know. I think also an important change in, in this sort of era of reasoning models and RL on language models is at the end of last year, RL on language models finally started to work. And I think OpenAI deserves a lot of credit for releasing the first serious RL+LLMs release with O1. And I think this really kicked off a pretty substantial change because it opened up a new axis of scaling, right? There was pre training scaling, and now there's test time compute and RL scaling. I think this is something which all of the research labs were investigating already. One of the reasons that DeepSeq was able to follow so fast was that they'd actually already released papers in the direction of doing RL on language models before, for example, so it was already an idea in the air. But OpenAI deserves the credit for crystallizing it, releasing it, and, and detailing the first public existence of the scaling laws.
+
+Matt Turk
+And maybe to continue making this super educational. How do test time compute and RL overlap?
+
+Sholto Douglas
+One way of thinking about this is test time compute is doing a lot of reasoning, and then RL is the feedback signal on whether or not that reasoning was right or wrong. And so test time computer is a way of answering questions that are hard for you to answer. Let's say I, I ask you a question that you just know off the cuff of your, like, you know, off the back of your hand, basically. It's not like from a field that you really know or whatever heuristic that you've already done, you've already baked that in to like your muscle memory, so to speak. But for something which requires you to really think and really learn, like when you're first doing math, if I ask you a basic times table right now, you can say that off like this. But if you're a kid, you have to do out the math and all this kind of stuff. You need to do the reasoning chain to learn it. And Then you get feedback on whether it's right or wrong. So test Time Compute lets you do harder problems than you can currently do, than you can currently do off the cuff. And RL then allows you to sort of distill that back into the model. It's almost like a ladder. You can constantly do slightly harder problems because you're learning strategies to do harder and harder and harder problems.
+
+Matt Turk
+Reinforcement learning is not a new concept. So we were talking about Richard Sutton, who's been doing work in the field for decades and others as well. And then there was alphago, that whole line of very successful, impressive RL based successes. So why is it that in 2025 there seems to be a breakthrough to apply those two LLMs?
+
+Sholto Douglas
+In some ways it's quite funny. A lot of the. Okay, yeah, how do I say, let's take the Deep SEQ paper, for example. In the Deep SEQ paper they detail one, an approach that works and two, a lot of approaches that don't work. Actually some of the approaches that didn't work were the approaches that led to AlphaGo's success. One of the craziest things about RL on language models in the RL from Verified Rewards regime is it's almost the simplest possible thing. It's almost too simple to work. And this again comes down to that question of taste where really I think a lot of people thought this was just too simple to work and so they tried more complex methods that ultimately ended up being harder to get to work. And there may still be juice in those methods, but it was actually really important to nail the simple thing first. And so I think people were like almost too ambitious with the RL strategies that they tried initially. I think there's also a minimum bar in LLM quality that is required. Like you need the model to be able to solve meaningfully difficult coding and math problems before you can get that feedback loop of, well, you solve these ones right and you solve these ones wrong. Right. And I think also one of like maybe the unintuitive things is those reasoning chains of tokens. People for a long time thought that you'd need to do something clever to give the model long term coherency. You have to remember that two years ago 8000 tokens was in long context for a language model. You know, two and a half years ago, 8,000 tokens is long. And now models are using 8,000 or, you know, 30,000 tokens to reason about something. Right. So there was this real phase shift in oh, language models are smart enough underlying priors that they can solve sensibly difficult questions. They're actually reasonably coherent at longer context than we thought they would be coherent. And that this ability to reason in long chains of tokens can emerge naturally with the right feedback signal. And this is a little bit counterintuitive. I think most people wouldn't have expected off the bat that the ability to reason would emerge naturally. There was a lot of thought that you'd have to structure it, you'd have to provide strategies for it to do reasoning, you'd have to build all these things prompted and hinted and this kind of stuff actually turns out well. No, you're give it math questions, tell it whether it got them right or wrong and the model will learn. This comes down to a bit of lesson and scale and search is just allow the model to search, have enough compute to run the experiments and the model actually ends up figuring out a really effective and sensible strategy.
+
+Matt Turk
+And that's what's happening now. The big labs are basically giving a lot more computer rl.
+
+Sholto Douglas
+Yeah, there's like minimum base model quality, minimum amount of computer rl, sort of trust in the ability for long term coherency, doing the simple thing that works. These all sound obvious, but they're actually like a little bit counterintuitive sometimes.
+
+Matt Turk
+You mentioned the word AGI earlier. So is your personal sentiment that the combination of ever more powerful LLMs plus RL gets us there? I think it's sufficient with a side of this question of what their actually means and what AGI means today.
+
+Sholto Douglas
+Yeah, there's a few definitions that one could use. I think a useful one is better than most humans at most computer facing tasks. Because I think that's a really important moment for the world where we go, okay, intellectual labor is addressable via this set of algorithms and that totally changes the world. I think there are other definitions that are stronger that you could use. One of those is stronger.
+
+Matt Turk
+That was pretty strong.
+
+Sholto Douglas
+Yeah, sorry, sorry. I mean like harder to meet maybe. Yes, yeah. Because you could have this and it could still not learn as effectively as humans. Right? We learn and generalize from very few examples. We have incredibly high what's called sample efficiency. Whereas AI models need hundreds or thousands of times more experience, hundreds of thousands of life lifetimes basically to learn the things that we learn. And they can they over those thousands of lifetimes, they do learn the skills that we do to an incredibly high degree of accuracy. I think like one of the important change over the last year has been that RL has finally meant that we can, we have Sort of this algorithm that allows us to take a feedback loop and turn it into a model that is at least as good as the best humans at a given thing in a narrow domain. And you're seeing that with mathematics and you're seeing that with competition code, which are the two domains most amenable to this where rapidly the models are becoming incredibly competent competition mathematicians and competition coders, right? There's nothing intrinsically like different about competition code and math. It's just that they're really amenable to RL and any other domain. But importantly, they demonstrate there's no intellectual ceiling on the models, right? They're capable of doing really tough reasoning given the right feedback loop. So we think that that same approach generalizes to basically all other domains of human intellectual endeavor. We're given the right feedback loop, these models will get good enough that they are at least as good as the best humans at a given thing. And then once you have something that is at least as good as the best humans at a thing, you can just run it a thousand of them in parallel or 100 times faster and you have something that's actually, even just with that condition, substantially smarter than any given human. And this is completely throwing aside whether or not it's possible to make something that is smarter than a human. It's like it seems entirely plausible, right? Like the brain is ultimately a biological computer. It seems possible to make a better one. But the like, the implications of this are pretty staggering, right? Which is that in the next two or three years, given the right feedback loops, given the right compute, given the right, you know, elbow grease and this kind of stuff, we think that we as the AI industry are all on track to create something that is at least as capable as most humans on most computer facing tasks, possibly as good as many of our best scientists at their fields. This is really wild. It'll be sharp and spiky, there'll be examples of things it can't do and this kind of stuff. But the world will change.
+
+Matt Turk
+What do you make of the counter thesis of again Rich Sutton or Yamakan that seem to be saying that a different approach is needed, or RL only. What do you make of that debate?
+
+Sholto Douglas
+Yeah, I think that it's true that our models don't learn anywhere near as efficiently as humans do, right? They take a thousand lifetimes to learn, but this is I think fine because they can live those thousand lifetimes, whether in simulations or doing a job at a thousand firms and so on and so forth. I think that the maybe I would disentangle. There's two arguments. One is like architecturally that transformers are insufficient. I don't think that's true. I think we haven't yet really found anything that transformers haven't been able to model provided sufficient data and sufficient computer. I think RL as an objective is a pretty powerful one. Rich Sutton is actually a big fan of RL as an objective. He just thinks we're actually encoding too many priors in with pre training and this kind of thing.
+
+Matt Turk
+It's not an adequate representation of the world.
+
+Sholto Douglas
+Yeah, it's not an adequate representation of the world. I think so far the evidence indicates that our current methods haven't yet found a problem domain that is not tractable with sufficient effort. And yeah, so things that would make me eat my words is like if there was some domain that we put a lot of effort into that just didn't move, like the goalkeeper, the goalpost, like, sorry, the like, you know, benchmarks just didn't move as and we just couldn't make any progress for a year. Then I would be like, okay, yeah, there's some fundamental limitation here.
+
+Matt Turk
+Yeah.
+
+Sholto Douglas
+But instead what I just constantly see is every time we make a benchmark that measures something we care about, progress is incredibly rapid. Along that I think this is worth crying from the rooftops a little bit of guys. Anything that we can measure seems to be improving really rapidly. Where does that get us in two or three years? I can't say for certain. But I think it's worth building into respective worldviews that there's a pretty serious chance that we get something that is AGI.
+
+Matt Turk
+Do you think people don't realize it's always interesting because reading stuff online in the last three, four months is this theme of the we've reached a plateau, but basically saying the opposite. We are in an exponential curve and many people don't realize that it's the case.
+
+Sholto Douglas
+Exactly. And I mean people have said that we've. We're hitting a plateau every month for the last three years. And if you look at what we've come over the last three years, it's incredible. I think that one other thing that makes me think, God, we're not anywhere close to a plateau is I look at how these models are produced and every part of it could be improved so much. It is a primitive pipeline held together by duct tape and the best efforts and elbow grease and late nights and. God, it's actually I remember. I don't know if this is a good analogy or whatever, but I remember I Went sailing with a couple of friends a few months ago and the boat was so well designed, it was just like clearly the product of, you know, like millennia or like, you know, centuries of like accumulated human design and effort. And I was like, wow, like this is, this is what it feels like to be in a sort of the accumulation of a lot of human effort. Right. It's actually pretty hard to beat today's best sailboat designs. But when I look at an LLM training pipeline, it is two and a half years of best effort, last minute desperate effort, and there's just so much room to grow on every part of it.
+
+Matt Turk
+So first of all, so suned 4.5, which is described as the best coding model in the world, also seems to be performing across a lot of different other domains like economics, research and finance. So it's already just to.
+
+Sholto Douglas
+One of the things I was really excited by actually was that there was that gdp eval that OpenAI released. And I'm not sure Sonnet 4.5 was only just released, so it's not on, but 4.1 Opus was leading model there and I think that's like a really interesting and really good eval because it demonstrates such a breadth of tasks across all parts of the economy.
+
+Matt Turk
+It's an eval that's across the various sectors of the economy. Right. So manufacturing and basically they took a bunch of experts to describe what success looks like and now the models are going to be able to be measured not across just coding or some limited tasks, but across everything. Is that a fair way of describing it?
+
+Sholto Douglas
+I've wanted someone to do this for a long time. Yes. Take the Bureau of Labor Statistics. I think the most important input into policy would be take the Bureau of Labor Statistics, take all the jobs there, break them down to tasks and see whether the AI models are able to do that and measure progress over time. Right. And this is obviously going to be in perfect measure. We'll probably reach better than human on the GDP eval and it won't change anything economically because it'll be all the connective tissue and all the context and actually the tasks won't be representative. But again, we'll then find better ways to measure these difficulties and we'll keep pushing benchmarks. I wanted someone to do this for a long time. I'm really glad they did it. I'm really glad that our models were general and, you know, generally strong and sort of showed up top across all the areas. And I think policymakers should really look at this and extend it and like really make an effort in investing, in figuring out whether we are on track for. For what I've been claiming we're on track for. Right. We can measure this.
+
+Matt Turk
+Yes.
+
+Sholto Douglas
+And we should be.
+
+Matt Turk
+Yes. So yeah, just to close on that last theme. So awesome. All very exciting. What do we all do? How do we prepare for this world? That seems to be around the corner.
+
+Sholto Douglas
+Yeah. I think the most actionable piece of advice is keep planning for a world where you as an individual have more leverage. Right now I can use two coding agents to do twice the work that I could have done before. If coding agents progress in the way I've been saying in a year or two you'll be able to manage a team, basically that works 24,7 for you doing work. I think we should expect in the digital domain for individuals to get dramatically more leverage over the next couple of years. I think then many incredibly important problems you're going to attract. Our world is so imperfect in so many ways. People still live in dramatic poverty. Health and medicine is unsolved. Housing is completely unsolved. The world could be a million times better in so many different ways. And what I hope is that people take initially models giving us leverage over the digital world and then hopefully models giving us leverage over the physical one through robotics to dramatically improve it.
+
+Matt Turk
+Is that happening? Robotics? That's another thing that seems to be one of the key themes. But on the other hand, to use actually the word hand, it seems like people are just still struggling to make hands move the way. So the physics of it seems to be the limiting factor.
+
+Sholto Douglas
+Yeah, there's this thing called Maravex paradox which is that things which we find really easy, like manipulation, picking up objects, are really hard for AI. But maybe things which we find are hard, like reasoning through mathematical problems easy. I actually think Moravec's paradox is a little bit fake. And I think this is mostly a question of data availability and RL signal and stuff. And I think one interesting one reason to look at this. If you look at robotic locomotion, so the ability of robots to walk around and balance and stuff, and look at the videos of the unitree robots. This difference now versus two years ago is crazy. These things are incredibly agile. There's this video, I think someone kicking one over and it literally does a matrix kind of get back up thing. It's crazy. This appears locomotion is a really easy RL signal and right now you can pretty much like locomotion is kind of solved. To be honest, with basic RL manipulation is a bit harder. But there's a few things that make me think that robotics is going to work. For starters, I've seen incredible progress from the robotics labs over this year. Really? They've gotten to the point where they can do pretty interesting basic physical tasks. Two is the existence of a large generator verifier gap, which is that. One of the things that makes improving our models hard is we constantly need to find people who can beat the models of the things we want to improve them on. But with robotics, we're making really smart general models. So you can actually have these as teachers or judges for whether or not the robot is doing the right thing. If I say stack the red block on top of the blue block, we could then ask the language model, did it stack the blocks appropriately? If so, give a reward. If not, don't. So you can use the generator verifier gap to give morals feedback. And finally, for a long time in robotics, people thought they would have to solve long term coherency and planning. And that's also something that language models have made easier. They can break things down into multiple steps. So all the robotics labs are focused really hard on making great motor policies and they're making incredible progress. It's mostly just, I think, like a data and feedback loop question.
+
+Matt Turk
+All right, Shalt, it's been fascinating. I can think of another 40 questions that I would want to ask you right now, but you've been incredibly generous with your time. Thank you so much. This was terrific. Really appreciate it.
+
+Sholto Douglas
+It was a real pleasure. Thank you very much.
+
+Matt Turk
+Hi, it's Matt Turk again. Thanks for listening to this episode of the MAD podcast. If you enjoyed it, we'd be very grateful if you would consider subscribing if you haven't already, or leaving a positive review or comment on whichever platform you're watching this or listening to this episode from. This really helps us build a podcast and get great guests. Thanks and see you at the next episode.
+
