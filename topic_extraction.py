@@ -10,11 +10,12 @@ client = OpenAI(
     )
 
 def System_prompt():
-    return f"""You are an expert at reading, understanding and analyzing transcripts of podcasts and then structuring the transcript into topics.
-    Based on the conversation and the discussion between the speakers, your job is to classify the transcript into key topics in the same order as they were discussed.
-    In general, classify into maximum 10 topics. 
+    return f"""You are an expert at reading, understanding and analyzing transcripts of podcasts. 
+    Your job is to return for the user the complete transcript of the podcast, classified into topics.
+    Based on the conversation and the discussion between the speakers, you must classify the transcript into key topics in the same order as they were discussed.
+    You must retunr the FULL TRANSCRIPT, not just parts of it. You are only allowed to do to classification, not to add neither to remove any text from the transcript.
 
-    You must return the COMPLETE TRANSCRIPT in the following JSON output format:
+    You must return the COMPLETE TRANSCRIPT in the following JSON output format for the user:
     {{
         "topic_1": {{
             "title": "title of the first topic",
@@ -38,14 +39,14 @@ def System_prompt():
     Instructions:
     - Don't include any other text in your response except the JSON output format.
     - The topics should cover the whole conversation, FROM THE EVERY BEGINNING TO THE EVERY END. Which means you MUST return back the WHOLE transcript classified in topics as explained in the JSON output format.
-    - Don't miss any sentence from the transcript. Every sentence must be classified under a topic.
+    - The topics must be different. No topic should be a subset of another topic. Limit the number of topics to a maximum of 10.
     - Don't change anything (no added text, no removed text, no changed text) in the transcript. Just classify it into topics. 
     - The topics should be different from each other. Each topic should cover a considerable amount of the transcript, from the beginning to the end.
     - Keep the speaker names in the transcript.
     """
 
 def User_prompt(transcript):
-    return f"""Analyze the following podcast transcript and return it back FULLY, classified into main topics.  
+    return f"""Read the following podcast transcript and return the COMPLETE TRANSCRIPT CLASSIFIED INTO TOPICS.  
             Transcript:
             {transcript}
         """
@@ -69,7 +70,7 @@ def extract_topics(transcript_path):
     try:
         # Call OpenAI API
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-4o",
             messages=[
                 {
                     "role": "system",
