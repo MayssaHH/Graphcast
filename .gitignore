@@ -4,3 +4,4 @@ audio_files/
 __pycache__/
 schema/__pycache__/
 outputs/
+summaries/
