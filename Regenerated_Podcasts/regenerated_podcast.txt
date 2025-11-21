@@ -1,0 +1,68 @@
+**Matt Turk**  
+Welcome to the MAD Podcast, where we explore the ever-evolving world of AI and technology. Today, I have the pleasure of welcoming Sholto Douglas, who will guide us through the fascinating landscape of AI advancements and the compute super cycle.  
+
+**Sholto Douglas**  
+Thank you, Matt. It's great to be here. Let's dive into the concept of the compute super cycle. People have speculated about hitting a plateau in AI growth, yet we continue to witness exponential advancements. Anything we can measure seems to be improving rapidly, particularly in AI models, although they still operate within a primitive pipeline that has much room for improvement.  
+
+**Matt Turk**  
+That's a crucial point, Sholto. The exponential growth ties into the release of Sonnet 4.5, which has become the best coding model worldwide. This aligns with the evolution of Frontier AI and the creation of Big AI Labs.  
+
+**Sholto Douglas**  
+Absolutely, Matt. Sonnet 4.5 is part of Anthropic's rapid release pace. It followed Sonnet 3.7, released earlier this year. This pace is a proxy for accelerating progress, facilitated by our understanding of the two paradigm regime, which offers opportunities to update models continuously.  
+
+**Matt Turk**  
+The post-ChatGPT investment cycle also plays a role here, marking the beginning of the compute super cycle. Anthropic's approach seems to be distinct from other AI labs, focusing on practical, scalable solutions.  
+
+**Sholto Douglas**  
+Indeed, our focus is on creating AI that is safe, controllable, and improves people's lives. This is different from labs like DeepMind, which focus more on scientific discoveries through projects like Alpha Fold. At Anthropic, coding and computer use are our primary focus areas, which we believe hold the most immediate impact.  
+
+**Matt Turk**  
+That's a fascinating distinction. Sholto, could you tell us a bit about your journey to Anthropic?  
+
+**Sholto Douglas**  
+Sure, I grew up in Australia, with my mother playing a significant mentoring role, which included her work in South Africa. I had enriching experiences in China and pursued fencing, which was a big part of my life. My academic journey included computer science and robotics, influenced by figures like Elon Musk, and eventually led to my involvement with Anthropic.  
+
+**Matt Turk**  
+Your diverse experiences surely contribute to your work at Anthropic. Looking at the broader landscape, how do you see AI's role in learning and development?  
+
+**Sholto Douglas**  
+Platforms like YouTube, combined with AI, have transformed learning. AI serves as a perfect tutor, enhancing our understanding of complex topics. This impact will only grow as we progress towards AGI, which I believe will be one of the most meaningful developments in the coming decade.  
+
+**Matt Turk**  
+With such rapid advancements, how does independent research and problem taste play into AI development?  
+
+**Sholto Douglas**  
+Independent research is crucial. It allows for high-signal contributions that traditional academic paths might overlook. This is especially true for underrepresented regions like Australia, where mentorship can be lacking. At Anthropic, we value the ability to demonstrate capability through independent work.  
+
+**Matt Turk**  
+Speaking of capability, how is Anthropic nurturing talent within AI research?  
+
+**Sholto Douglas**  
+We focus on growing junior people into skilled researchers and engineers. This involves designing new infrastructures, like inference stacks and RL code bases, derived from first principles. Our work extends into creating models that enhance productivity through coding.  
+
+**Matt Turk**  
+It's impressive how coding has become a focal point for Anthropic. Can you elaborate on the economic impact of these advancements?  
+
+**Sholto Douglas**  
+Certainly. Coding offers a tractable problem domain with significant economic impact. The demand for software is massive, outweighing the current supply. By focusing on coding, we aim to accelerate AI research and meet this demand effectively.  
+
+**Matt Turk**  
+Let's discuss the performance of AI models like Sonnet 4.5 across various domains.  
+
+**Sholto Douglas**  
+Sonnet 4.5 excels in GDP evaluations, performing well across sectors like economics, research, and finance. This indicates its strong general capability, although current measures may not fully capture the economic impact due to contextual limitations.  
+
+**Matt Turk**  
+Looking to the future, what are the prospects for AI models?  
+
+**Sholto Douglas**  
+The potential is immense. We're planning for a world where coding agents offer tremendous leverage, solving pressing global issues through digital and physical means. However, challenges remain, especially in robotics. Progress in this area, supported by language models, could lead to significant breakthroughs.  
+
+**Matt Turk**  
+Thank you, Sholto, for a truly enlightening conversation.  
+
+**Sholto Douglas**  
+Thank you, Matt. It's been a pleasure discussing these pivotal topics.  
+
+**Matt Turk**  
+To our listeners, thank you for tuning in. If you enjoyed today's episode, please support the podcast by sharing it and suggesting great guests for future episodes. Until next time, goodbye!
