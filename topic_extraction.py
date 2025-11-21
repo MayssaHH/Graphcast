@@ -30,7 +30,7 @@ def System_prompt():
             "transcript": "all transcript chunks that cover the third topic"
         }},
         ...
-        "topic_10": {{
+        "topic_n": {{
             "title": "title of the tenth topic",
             "transcript": "all transcript chunks that cover the tenth topic" (this should end with the last sentence of the transcript)
         }}
@@ -39,7 +39,7 @@ def System_prompt():
     Instructions:
     - Don't include any other text in your response except the JSON output format.
     - The topics should cover the whole conversation, FROM THE EVERY BEGINNING TO THE EVERY END. Which means you MUST return back the WHOLE transcript classified in topics as explained in the JSON output format.
-    - The topics must be different. No topic should be a subset of another topic. Limit the number of topics to a maximum of 10.
+    - The topics must be different. No topic should be a subset of another topic. Limit the number of topics as much as possible. 
     - Don't change anything (no added text, no removed text, no changed text) in the transcript. Just classify it into topics. 
     - The topics should be different from each other. Each topic should cover a considerable amount of the transcript, from the beginning to the end.
     - Keep the speaker names in the transcript.
